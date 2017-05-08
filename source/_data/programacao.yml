@@ -1,0 +1,139 @@
+# Dmonigo
+- day: "dom"
+  transmission: true
+  event:
+    hour: "Todo 1° domingo do mês às 09h30 & 18h30"
+    name: "Santa Ceia"
+    local: "Templo Sede"
+
+- day: "dom"
+  transmission: true
+  event:
+    hour: "09h30"
+    name: "EBD"
+    local: "Templo Sede"
+
+- day: "dom"
+  transmission: true
+  event:
+    hour: "18h30"
+    name: "Culto de Celebração"
+    local: "Templo Sede"
+
+# Segunda
+- day: "seg"
+  transmission: false
+  event:
+    hour: "08h00"
+    name: "Reunião de Intercessão"
+    local: "Templo Auxiliar"
+
+- day: "seg"
+  transmission: false
+  event:
+    hour: "16h00"
+    name: "Amigos da Oração"
+    local: "Templo Auxiliar"
+
+- day: "seg"
+  transmission: false
+  event:
+    hour: "19h00"
+    name: "Segunda Diferente (2D)"
+    local: "Templo Auxiliar"
+
+# Terça
+- day: "ter"
+  transmission: false
+  event:
+    hour: "08h00"
+    name: "Reunião de Intercessão"
+    local: "Templo Auxiliar"
+
+- day: "ter"
+  transmission: true
+  event:
+    hour: "Toda 3ª terça-feira do mês às 19h00"
+    name: "Santa Ceia"
+    local: "Templo Sede"
+
+- day: "ter"
+  transmission: true
+  event:
+    hour: "19h00"
+    name: "Culto da Palavra"
+    local: "Templo Sede"
+
+# Quarta
+- day: "qua"
+  transmission: false
+  event:
+    hour: "08h00"
+    name: "Reunião de Intercessão"
+    local: "Templo Auxiliar"
+
+- day: "qua"
+  transmission: false
+  event:
+    hour: "19h00"
+    name: "Culto de Oração"
+    local: "Templo Auxiliar"
+
+# Quinta
+- day: "qui"
+  transmission: false
+  event:
+    hour: "08h00"
+    name: "Reunião de Intercessão"
+    local: "Templo Auxiliar"
+
+- day: "qui"
+  transmission: true
+  event:
+    hour: "19h00"
+    name: "Culto da Vitória"
+    local: "Templo Sede"
+
+# Sexta
+- day: "sex"
+  transmission: false
+  event:
+    hour: "08h00"
+    name: "Reunião de Intercessão"
+    local: "Templo Auxiliar"
+
+- day: "sex"
+  transmission: true
+  event:
+    hour: "19h00"
+    name: "Escola Bereana"
+    local: "Templo Sede"
+
+- day: "sex"
+  transmission: true
+  event:
+    hour: "21h30"
+    name: "Inflamável"
+    local: "Templo Sede"
+
+# Sábado
+- day: "sab"
+  transmission: false
+  event:
+    hour: "09h00"
+    name: "Manha de Avivamento"
+    local: "Templo Auxiliar"
+
+- day: "sab"
+  transmission: true
+  event:
+    hour: "Todo 2° sábado às 19h00"
+    name: "Culto Interligados"
+    local: "Templo Sede"
+
+- day: "sab"
+  transmission: true
+  event:
+    hour: "Todo 3° sábado às 19h00"
+    name: "Encontro Jovem"
+    local: "Templo Sede"

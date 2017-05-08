@@ -1,0 +1,78 @@
+//
+// Footer
+//
+// ==================================================
+
+.footer
+  width 100%
+  height auto
+  background rgba(252, 252, 252, 1)
+  border-top 1px solid #efefef
+  position relative
+  flex(center, center, col)
+
+  span
+    font-weight 300
+    font-size .85em
+
+  &__container
+    width $widthContainer
+
+    &__row
+      width 100%
+      margin-top 60px
+      margin-bottom 50px
+      box-sizing border-box
+      flex(between, center, col)
+      +above('sm')
+        flex(between, center, row)
+
+      &__social
+        margin-top 30px
+        display none
+        flex(center, center, col)
+        text-align center
+        +above('sm')
+          display block
+          text-align right
+
+      &__icons
+        flex(between, center, row)
+        width 80%
+        font-size 1.3rem
+        margin-top 50px
+        +above('sm')
+          display none
+
+      &__local
+        flex(center, center, col)
+        text-align center
+        +above('sm')
+          display flex
+          justify-content center
+          align-items flex-start
+          text-align left
+
+      &__local
+      &__social
+        h3
+          color $gray-darker
+          font-weight 500
+          margin-bottom 15px
+
+        a
+          margin-top 15px
+          &:hover
+            color $red
+
+      &--copyright
+        flex(center, center, col)
+        text-align center
+        padding-top 15px
+        margin-bottom 35px
+        border-top 1px #ececec solid
+        +above('lg')
+          flex(between, center, row)
+
+        span
+          margin-top 15px

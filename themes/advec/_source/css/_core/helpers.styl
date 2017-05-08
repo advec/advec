@@ -1,0 +1,177 @@
+//
+// Helpers
+//
+// 1. Center, horizontal and vertical
+// 2. Resets
+// 3. Hidden
+// 4. Containers
+//
+// ===============================================================
+
+//
+// 1. Center, horizontal and vertical
+// -----------------------------------
+
+center(arg = '', pos = '')
+  if (pos == fixed)
+    position fixed
+
+  else
+    position absolute
+
+
+  if (arg == top)
+    top 50%
+    transform translateY(-50%)
+
+  else if (arg == full)
+    top 50%
+    left 50%
+    transform translate(-50%,-50%)
+
+  else
+    left 50%
+    transform translateX(-50%)
+
+
+//
+// 2. Resets
+// --------------------------------------------------
+
+reset(arg = '')
+
+  if (arg == list)
+    margin 0
+    padding-left 0
+    list-style none
+
+  if (arg == form)
+    background 0
+    border 0
+    padding 0
+
+
+//
+// 3. Hidden
+// --------------------------------------------------
+
+hidden(arg = '')
+
+  // Hidden Font
+  if (arg == font)
+    font-size 0
+    text-indent -999em
+
+  if (arg == xs)
+    +below('xs')
+      display none !important
+
+  // Hidden on small screens
+  if (arg == sm)
+    +below('sm')
+      display none !important
+
+  // Hidden on medium screens
+  if (arg == md)
+    +below('md')
+      display none !important
+
+  // Hidden All
+  if (arg == all)
+    visibility hidden !important
+    font-size 0 !important
+    display none !important
+
+  // Screen Reader Only
+  if (arg == sr)
+    position absolute !important
+    top -100vh
+    width 1px
+    height 1px
+    padding 0
+    margin -1px
+    overflow hidden
+    clip rect(0,0,0,0)
+    border 0
+
+
+visible(arg = '')
+
+  // Visible on extra-small screens
+  if (arg == xs)
+    +above('sm')
+      display none !important
+
+
+  // Visible on small screens
+  if (arg == sm)
+    display none !important
+
+    +above('sm')
+      display block !important
+
+
+  // Visible on large screens
+  if (arg == lg)
+    display none !important
+
+    +above('lg')
+      display block !important
+
+//
+// 4. Containers
+// --------------------------------------------------
+
+container()
+  margin-left auto
+  margin-right auto
+  max-width 85%
+  min-width 85%
+
+flex(x = '', y = '', z = '')
+
+  display flex
+
+  // justify-content
+
+  if(x == center)
+    justify-content center
+
+  if(x == left)
+    justify-content flex-start
+  
+  if(x == right)
+    justify-content flex-end
+
+  if(x == between)
+    justify-content space-between
+
+  // align-items
+
+  if(y == center)
+    align-items center
+
+  if(y == left)
+    align-items flex-start
+
+  if(y == right)
+    align-items flex-end
+
+  // flex-direction
+
+  if(z == col)
+    flex-direction column
+
+  if(z == row)
+    flex-direction row
+
+font-responsive(max)
+  min = max - 28.56%
+  font-size responsive
+  min-font-size min rem
+  max-font-size max
+  lower-font-range 420px
+  upper-font-range 1980px
+
+@alias
+  bgImage background-image

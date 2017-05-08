@@ -1,0 +1,91 @@
+//
+// Page - Pr. José Santos
+//
+// ==================================================
+
+.prjosesantos
+    background white
+
+    &__header
+        height 86vh
+        box-sizing border-box
+        flex(center, center, col)
+        position relative
+        +above('sm')
+            height 65vh
+            flex(center, center, row)
+
+        &__background
+            height 40vh
+            width 100%
+            background url("/assets/images/back/section/prjosesantos.png")
+            background-size cover
+            background-position center center
+            +above('sm')
+                height 100%
+                order 2
+
+        &__block
+            background white
+            flex(center, up, row)
+            padding-top 3.6em
+            height 60vh
+            width 100%
+            +above('sm')
+                flex(center, center, row)
+                height 100%
+                order 1
+
+            &__container
+                width 75%
+                height auto
+                position relative
+                z-index 0
+                +above('sm')
+                    width 60%
+                
+                &__col
+                    &__title
+                        color $red
+                        margin-bottom 2em
+
+                    &__text
+                        margin-bottom 1em
+
+                    &__button
+                        text-align left
+                        +above('sm')
+                            text-align left
+    
+    &__text
+        flex(center, center, row)
+        width 100%
+        margin-bottom 2em
+        +above('sm')
+            margin-bottom 7em
+            margin-top 8em
+
+        &__container
+            text-align left
+            width 75%
+            max-width 800px
+            position relative
+
+            &:after
+                display inline-block
+                font-family FontAwesome
+                content "\f10d"
+                font-style normal
+                font-weight normal
+                text-decoration inherit
+                font-size 8rem
+                color black
+                opacity .03
+                position absolute
+                top -76px
+                left -60px
+                z-index 0
+            
+
+            p
+                margin-bottom 2em

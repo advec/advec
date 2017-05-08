@@ -1,0 +1,201 @@
+//
+// Header
+//
+// ==================================================
+
+.navbar
+  box-shadow linear-gradient(rgba(0,0,0,0.38) 0, rgba(0,0,0,0) 100%)
+  transition 0.2s cubic-bezier(0.36, 0.66, 0.04, 1)
+  height 100px
+  flex(center, center, row)
+  width 100%
+  top 0
+  position absolute
+  z-index 5
+  +above('sm')
+    background none
+
+  &:after
+    content ''
+    z-index 0
+    top -5px
+    right 0
+    left 0
+    position absolute
+    height 120px
+    background linear-gradient(to bottom,#000 0,transparent 100%)
+    opacity .85
+
+  &__container
+    position relative
+    z-index 1
+    width 85%
+
+    &__row
+      flex(between, center, row)
+
+      &__logo
+        width 170px
+        +below('xs')
+          width 9rem
+
+        .st0
+          fill-rule evenodd
+          clip-rule evenodd
+
+        .st0
+        .st1
+        .st2
+        .st3
+          fill #fff
+
+      &__navbar
+        align-items center
+
+        &__items
+          display flex
+          justify-content center
+          align-items center
+
+          ul
+            display flex
+            justify-content flex-end
+            padding 0
+            margin 0
+            display none
+            +above('lg')
+              display flex
+
+            li
+              text-align center
+              margin-right 35px
+              transition 0.3s all
+
+              &:hover
+                opacity 1 !important
+
+              &:last-child
+                margin-right 0
+
+              a
+                color #fff
+                font-size .8em
+                padding-top 20px
+                padding-bottom 20px
+                font-weight 500
+                text-transform uppercase
+
+  &__color
+    &:after
+      display none
+
+  &__white
+    background-image none
+    background-color $white
+    position relative
+
+    &:after
+      display none
+
+    ul
+      li
+        a
+          color #000
+
+    .btn
+      &--active
+        background #000
+        color #fff !important
+
+      &--white
+        box-shadow 0px 0px 0px 2px #000 inset
+        color #000
+
+        &:hover
+          background #000
+          color #fff
+
+    .st0
+    .st1
+    .st2
+    .st3
+      fill #000 !important
+
+    .btn-nav
+      span
+        background $gray-darker
+        color $gray-darker
+
+/* menu hamburguer nav */
+
+.megamenu
+  display flex
+  position fixed
+  width 100%
+  height 100%
+  top 0
+  color #ffffff !important
+  background $gray-darker
+  z-index: 4
+  justify-content center
+  transition all 1s cubic-bezier(0.7, -0.02, 0, 1)
+  transform translateY(-40%)
+  opacity 0
+  +above('lg')
+    display none
+
+  +above('xlg')
+    height 100%
+    padding-bottom 5%
+
+  &.appear
+    opacity 0.98
+    transform translateY(0%) !important
+
+  &__container
+    width $widthContainer
+
+    &__block
+      margin-top 90px
+      position fixed
+      overflow scroll
+      width 85%
+      height 73%
+      +above('xlg')
+        overflow hidden
+        position relative
+        width 100%
+
+      &__list
+        display flex
+        justify-content space-between
+        flex-direction column
+        height 100%
+        width 100%
+        padding 0
+        margin 0
+        position absolute
+        +above('sm')
+          flex-direction row
+          flex-wrap wrap
+
+        +above('xlg')
+          height auto
+          flex-direction row
+          position relative
+
+        &__item
+          display flex
+          align-items flex-start
+          flex-direction column
+          justify-content center
+
+          h4
+            display inline-block
+            font-weight 500
+            margin-top 2em
+            text-transform uppercase
+
+  &__white
+    color #000 !important
+    background linear-gradient(to bottom,  rgba(255,255,255,255.1) 0%,rgba(255,255,255,.9) 100%)

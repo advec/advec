@@ -1,0 +1,25 @@
+title: ADVEC
+subtitle: "ADVEC @ 2017"
+description: "ADVEC @ 2017."
+author: LIUG
+timezone: UTC
+url: https://advec.org
+root: /
+permalink: :title/
+code_dir: downloads/code
+highlight:
+  enable: true
+  line_number: false
+per_page: 0
+
+theme: advec
+deploy:
+  type: heroku
+  repo: https://git.heroku.com/radiant-oasis-83072.git
+  branch: master
+  message: Deployment of Hexo to heroku.
+
+facebook: advecoficial
+instagram: advecoficial
+twitter: advecoficial
+youtube: advitoriaemcristo

@@ -1,0 +1,302 @@
+//
+// Buttom
+//
+// ==================================================
+
+.btn
+  box-sizing border-box
+  color $white
+  display inline-block
+  font-size .85rem
+  font-weight 500 !important
+  text-align center
+  text-decoration none
+  text-transform uppercase
+  cursor pointer
+  padding 10px 25px
+  &:active
+    transform translateY(7%)
+
+  &--white
+    box-shadow: inset 0 0 0 2px white
+    color white
+
+    &:hover
+      background white
+      color $gray-dark !important
+
+      &:after
+        color $gray-dark
+
+    &:after
+      font-family FontAwesome
+      font-size .75rem
+      content "\f054"
+      font-style normal
+      font-weight normal
+      text-decoration inherit
+      margin-left 15px
+      color white
+
+  &--black
+    box-shadow: inset 0 0 0 2px $gray-dark
+    color $gray-dark
+
+    &:hover
+      background $gray-dark
+      color white !important
+
+      &:after
+        color white
+
+    &:after
+      font-family FontAwesome
+      font-size .75rem
+      content "\f054"
+      font-style normal
+      font-weight normal
+      text-decoration inherit
+      margin-left 15px
+      color $gray-dark
+
+  &--blue
+    box-shadow: inset 0 0 0 2px $blue
+    color $blue
+
+    &:hover
+      background $blue
+      color white !important
+
+      &:after
+        color white
+
+    &:after
+      font-family FontAwesome
+      font-size .75rem
+      content "\f054"
+      font-style normal
+      font-weight normal
+      text-decoration inherit
+      margin-left 15px
+      color $blue
+
+  &--blue-all
+    background $blue
+    box-shadow: inset 0 0 0 2px $blue
+    color $white
+
+    &:hover
+      opacity .8
+
+      &:after
+        color $white
+
+    &:after
+      font-family FontAwesome
+      font-size .75rem
+      content "\f054"
+      font-style normal
+      font-weight normal
+      text-decoration inherit
+      margin-left 15px
+      color $white
+
+  &--red
+    box-shadow: inset 0 0 0 2px $red
+    color $red
+
+    &:hover
+      background $red
+      color white !important
+
+      &:after
+        color white
+
+    &:after
+      font-family FontAwesome
+      font-size .75rem
+      content "\f054"
+      font-style normal
+      font-weight normal
+      text-decoration inherit
+      margin-left 15px
+      color $red
+
+  &--red-light
+    box-shadow: inset 0 0 0 2px $red_light
+    color $red_light
+
+    &:hover
+      background $red_light
+      color white !important
+
+      &:after
+        color white
+
+    &:after
+      font-family FontAwesome
+      font-size .75rem
+      content "\f054"
+      font-style normal
+      font-weight normal
+      text-decoration inherit
+      margin-left 15px
+      color $red_light
+
+  &--orange
+    box-shadow: inset 0 0 0 2px $orange
+    color $orange
+
+    &:hover
+      background $orange
+      color white !important
+
+      &:after
+        color white
+
+    &:after
+      font-family FontAwesome
+      font-size .75rem
+      content "\f054"
+      font-style normal
+      font-weight normal
+      text-decoration inherit
+      margin-left 15px
+      color $orange
+
+  &--aovivo
+    background $red
+    color white
+
+    &:hover
+      background white
+      color $gray-dark
+
+      &:after
+        color $gray-dark
+
+    &:after
+      font-family FontAwesome
+      font-size .75rem
+      content "\f054"
+      font-style normal
+      font-weight normal
+      text-decoration inherit
+      margin-left 15px
+      color white
+
+  &--pray
+    box-shadow: inset 0 0 0 2px $red
+    color $red
+
+    &:hover
+      background $red
+      color white !important
+
+      &:after
+        color white
+
+    &:after
+      font-family FontAwesome
+      font-size .75rem
+      content "\f054"
+      font-style normal
+      font-weight normal
+      text-decoration inherit
+      margin-left 15px
+      color $red
+
+
+.btn-nav
+  width 25px
+  height 19px
+  position relative
+  -webkit-transform rotate(0deg)
+  -moz-transform rotate(0deg)
+  -o-transform rotate(0deg)
+  transform rotate(0deg)
+  -webkit-transition .5s ease-in-out
+  -moz-transition .5s ease-in-out
+  -o-transition .5s ease-in-out
+  transition .5s ease-in-out
+  cursor pointer
+  +above('lg')
+    display none
+
+
+.btn-nav
+  span
+    display block
+    position absolute
+    height 3px
+    width 100%
+    background white
+    opacity 1
+    left 0
+    -webkit-transform rotate(0deg)
+    -moz-transform rotate(0deg)
+    -o-transform rotate(0deg)
+    transform rotate(0deg)
+    -webkit-transition .25s ease-in-out
+    -moz-transition .25s ease-in-out
+    -o-transition .25s ease-in-out
+    transition .25s ease-in-out
+
+
+/* Icon 3 */
+
+.btn-nav
+  span
+    &:nth-child(1)
+      top 0px
+
+
+.btn-nav
+  span
+    &:nth-child(2)
+    &:nth-child(3)
+      top 7px
+
+
+.btn-nav
+  span
+    &:nth-child(4)
+      top 14px
+
+
+.btn-nav
+  &.open
+    span
+      &:nth-child(1)
+        top 18px
+        width 0%
+        left 50%
+
+
+.btn-nav
+  &.open
+    span
+      &:nth-child(2)
+        -webkit-transform rotate(45deg)
+        -moz-transform rotate(45deg)
+        -o-transform rotate(45deg)
+        transform rotate(45deg)
+
+
+.btn-nav
+  &.open
+    span
+      &:nth-child(3)
+        -webkit-transform rotate(-45deg)
+        -moz-transform rotate(-45deg)
+        -o-transform rotate(-45deg)
+        transform rotate(-45deg)
+
+
+.btn-nav
+  &.open
+    span
+      &:nth-child(4)
+        top 18px
+        width 0%
+        left 50%

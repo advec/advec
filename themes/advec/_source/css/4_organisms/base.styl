@@ -1,0 +1,100 @@
+//
+// Base
+//
+// ==================================================
+
+body
+  margin 0
+  padding 0
+  color $text-color
+  font-family('gotham')
+  background white
+
+  &.overflow--hidden
+    width 100%
+    position fixed
+    /* when primary navigation is visible, the content in the background won't scroll */
+    overflow hidden !important
+
+h1
+h2
+h3
+h4
+h5
+h6
+  padding 0
+  margin 0
+  line-height 1em
+  letter-spacing -0.03em
+  font-weight 300
+
+h1
+  font-responsive($h1-size)
+
+h2
+  font-responsive($h2-size)
+
+h3
+  font-responsive($h3-size)
+
+h4
+  font-responsive($h4-size)
+
+h5
+  font-responsive($h5-size)
+
+p
+  font-responsive($p-size)
+  font-weight 300
+  letter-spacing .5px
+  line-height 25px
+  padding 0
+  margin 0
+  display block
+
+/* reduce orphans and widows when printing */
+
+p, pre, blockquote, ul, ol, dl, figure, table, fieldset
+  orphans 3
+  widows 3
+
+/* links */
+
+a
+  color inherit
+  text-decoration none
+  transition .2s ease-in-out
+
+  &hover,
+  &active
+    outline 0
+
+/* horizontal rule */
+
+hr
+  display block
+  opacity .1
+  border 1px solid $gray-light
+
+
+/* lists */
+
+ul li,
+ol li
+  padding 0
+  margin 0
+  list-style none
+
+
+li ul,
+li ol
+  padding 0
+  margin 0
+  list-style none
+
+/* section */
+
+section
+  overflow hidden
+  width 100%
+  box-sizing border-box

@@ -1,0 +1,44 @@
+//
+// Bar
+//
+// ==================================================
+
+.bar
+  width 100%
+  flex(center, center, col)
+  height auto
+  padding-top 25px
+  padding-bottom 25px
+  background $green
+  +above('sm')
+    padding-top 32px
+    padding-bottom 32px
+
+  &__container
+    flex(between, center, col)
+    width 85%
+    max-width 480px
+    text-align center
+    +above('sm')
+      text-align left
+      flex(between, center, row)
+
+    &__title
+      color white
+      margin-bottom 15px
+      +above('sm')
+        margin-bottom 0px
+
+  &--aovivo
+    background #cc0000
+    bottom 0
+    flex(center, center, col)
+    height auto
+    opacity .9
+    padding-bottom 12px
+    padding-top 12px
+    position absolute
+    width 100%
+    z-index 1
+    +above('xs')
+      display none

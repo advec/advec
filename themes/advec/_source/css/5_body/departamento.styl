@@ -1,0 +1,88 @@
+//
+// Page - Departamento
+//
+// ==================================================
+
+.departamento-title
+    display flex
+    align-items center
+    flex-direction column
+    background white
+    box-sizing border-box
+    background url("/assets/images/back/section/departamento.png")
+    background-size cover
+    background-position center center
+    position relative
+    +above('sm')
+        height 75vh
+        flex(center, center, col)
+
+    &__container
+        width 85%
+        +above('xs')
+            display flex
+            align-items center
+            justify-content center
+
+        &__block
+            display inline-block
+            padding-top 6.5em
+            padding-bottom 4em
+            width 100%
+
+            &__title
+                +above('xs')
+                    text-align center
+
+                h1
+                    color white
+                    font-weight bold
+
+            &__text
+                padding-top 1em
+                +above('xs')
+                    text-align center
+
+                p
+                    color white
+
+.departamento-list
+    display flex
+    justify-content center
+    align-items center
+    margin-bottom 3em
+    margin-top 3em
+    width 100%
+
+    &__container
+        display flex
+        justify-content space-between
+        flex-wrap wrap
+        width 85%
+        max-width 880px
+
+        &__block
+            display flex
+            align-content center
+            flex-direction column
+            margin-bottom 3em
+            max-width 400px
+            width 100%
+            position relative
+
+            &__background
+                width 100%
+                display block
+                img
+                    width 100%
+
+            &__title
+                background $red
+                display inline-table
+                padding .6em
+                position absolute
+                left 1em
+                bottom -.6em
+                h3
+                    color white
+                    font-weight bold

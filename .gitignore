@@ -1,0 +1,7 @@
+.git
+db.json
+.DS_Store
+
+_off/
+node_modules/
+public/

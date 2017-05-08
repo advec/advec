@@ -1,0 +1,108 @@
+//
+// Section
+//
+// 1. Section
+// 2. Header
+// 3. Bars
+//
+// ==================================================
+
+//
+// 1. Section
+// --------------------------------------------------
+
+.section
+  display flex
+  align-items center
+  justify-content center
+  color $white
+  height 70vh
+  background-attachment fixed
+  background-size cover
+  background-position center center
+  +below('xs')
+    height 100vh
+
+  &__container
+    container()
+    display flex
+    justify-content center
+
+    &__col
+      max-width 50%
+
+      &__title
+        font-size: responsive
+
+      &__text
+        p
+          font-size: responsive 19px 21px
+
+      &__button
+        a:first-child
+          margin-right 10px
+
+      &__title,
+      &__button
+        padding-top 1.5em
+        padding-bottom 1.5em
+
+      &__title,
+      &__text,
+      &__button
+        text-align center
+
+//
+// 2. Header
+// --------------------------------------------------
+
+.section__header
+  height 55vh
+  color $white
+  text-align center
+  display flex
+  justify-content center
+  align-items center
+  overflow hidden
+  +below('xs')
+    height 100vh
+
+  &--header__filial
+    background-image url('/assets/images/back/section_filiais.png')
+    background-size cover
+    background-position center center
+    background-repeat no-repeat
+
+  &--header__departamentos
+    background-image url('/assets/images/back/section_departamentos.png')
+    background-size cover
+    background-position center center
+    background-repeat no-repeat
+
+  &--header__dizimo
+    height 100vh
+    background-image url('/assets/images/back/section_oferta.png')
+    background-size cover
+    background-position center center
+    background-repeat no-repeat
+
+  .header__inner-wrap
+    display flex
+    align-items center
+    justify-content center
+    width 100%
+    flex-flow column
+
+    .inner-wrap__block
+      max-width 50%
+      display flex
+      justify-content center
+      align-items center
+      flex-flow column
+
+      .block__text
+        margin-top 10px
+
+      .block__button
+        padding-top 1.5em
+        padding-bottom 1.5em
