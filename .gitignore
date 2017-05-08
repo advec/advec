@@ -1,6 +1,7 @@
 .git
 db.json
 .DS_Store
+_config.yml
 
 _off/
 node_modules/
