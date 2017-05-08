@@ -5,3 +5,4 @@ db.json
 _off/
 node_modules/
 public/
+.deploy_heroku
