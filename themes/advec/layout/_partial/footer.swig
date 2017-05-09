@@ -3,7 +3,7 @@
         <div class="footer__container__row">
             <div class="footer__container__row__local">
                 <h3>Estamos<br>Aqui.</h3>
-                <p>(Sede) Rua Montevideu, 1191<br>Penha - Rio de Janeiro</p>
+                <p>(Sede) Rua Montevideu, 900<br>Penha - Rio de Janeiro</p>
                 <a href="/filiais/" class="btn btn--black">Nossas filiais</a>
             </div>
             <div class="footer__container__row__social">
