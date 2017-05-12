@@ -28,6 +28,8 @@
     "gulp-group-css-media-queries": "^1.2.0",
     "gulp-imagemin": "^3.1.1",
     "gulp-plumber": "^1.1.0",
+    "gulp-rev": "^7.1.2",
+    "gulp-sourcemaps": "^2.6.0",
     "gulp-stylus": "^2.6.0",
     "gulp-uglify": "^2.0.1",
     "imagemin-pngquant": "^5.0.0",

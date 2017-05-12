@@ -1,5 +1,25 @@
 # Rio de Janeiro
 - est: "rj"
+  id: "angradosreis"
+  nome: "Angra dos Reis"
+  pastor:
+    nome: "Pr. Alan Menezes Mendes Rocha"
+    foto: ""
+  endereco: "Av. Francisco Magalhães de Castro, 236 Loja - Perequê – Angra dos Reis - Rio de Janeiro"
+  telefone: "(24) 3362-6179"
+  facebook: "..."
+
+- est: "rj"
+  id: "araruama"
+  nome: "Araruama"
+  pastor:
+    nome: "Pr. Luiz Cláudio de Souza"
+    foto: ""
+  endereco: "Rodovia Amaral Peixoto, 89.743 - Centro – Araruama - Rio de Janeiro"
+  telefone: "(22) 2673-5499"
+  facebook: "..."
+
+- est: "rj"
   id: "avmeriti"
   nome: "Av. Meriti"
   pastor:
@@ -43,6 +63,16 @@
   facebook: "..."
 
 - est: "rj"
+  id: "cabucu"
+  nome: "Cabuçu"
+  pastor:
+    nome: "Pr. Armando Nunes de Carvalho"
+    foto: ""
+  endereco: "Av. Abílio Augusto Távora, 6900 - Cabuçu – Nova Iguaçu – Rio de Janeiro"
+  telefone: "(21) 2668-4414"
+  facebook: "..."
+
+- est: "rj"
   id: "cajai"
   nome: "Cajá I"
   pastor:
@@ -76,6 +106,16 @@
   facebook: "..."
 
 - est: "rj"
+  id: "camposelisios"
+  nome: "Campos Elísios"
+  pastor:
+    nome: "Pr. Antônio Paulo Costa Vieira"
+    foto: ""
+  endereco: "Rua Sete, 21 - Campos Elíseos – Duque de Caxias – Rio de Janeiro"
+  telefone: "(21) 2668-4414"
+  facebook: "..."
+
+- est: "rj"
   id: "campogrande"
   nome: "Campo Grande"
   pastor:
@@ -98,6 +138,37 @@
   facebook: "..."
 
 - est: "rj"
+  id: "coelhodarocha"
+  nome: "Coelho da Rocha"
+  pastor:
+    nome: "Pr. Victorino da Silva Júnior"
+    foto: ""
+  endereco: "Rua Vhail Pereira, 196 – Centro - Coelho da Rocha – São João de Meriti – Rio de Janeiro"
+  telefone: "(21) 2751-3874"
+  link: "/filiais/chatuba"
+  facebook: "..."
+
+- est: "rj"
+  id: "comendadorsoares"
+  nome: "Comendador Soares"
+  pastor:
+    nome: "Pr. Davi do Carmo Mendes"
+    foto: ""
+  endereco: "Rua João Leopoldo, 30 - Comendador Soares – Nova Iguaçu – Rio de Janeiro"
+  telefone: "(21) 3764-0650"
+  facebook: "..."
+
+- est: "rj"
+  id: "cordeiro"
+  nome: "Cordeiro"
+  pastor:
+    nome: "Pr. Leandro Meirelles"
+    foto: ""
+  endereco: "Rua Narcibe Simão, 1.584 - Retiro Poético – Cordeiro – Rio de Janeiro"
+  telefone: ""
+  facebook: "..."
+
+- est: "rj"
   id: "doisirmaos"
   nome: "Dois Irmãos"
   pastor:
@@ -106,6 +177,16 @@
   endereco: "Rua Matusalém - nº 32 - Curicica - Jacarepaguá– Rio de Janeiro"
   telefone: ""
   link: "/filiais/doisirmaos"
+  facebook: "..."
+
+- est: "rj"
+  id: "engenheiropedreira"
+  nome: "Engenheiro Pedreira"
+  pastor:
+    nome: "Pr. Diego Félix da Cunha "
+    foto: ""
+  endereco: "Rua São Tiago SN esquina com Av. Rui Barbosa - Engenheiro Pedreira – Japeri – Rio de Janeiro"
+  telefone: ""
   facebook: "..."
 
 - est: "rj"
@@ -128,6 +209,26 @@
   endereco: "Estrada do Guerenguê - nº 2.118 - Taquara - Jacarepagua – Rio de Janeiro "
   telefone: ""
   link: "/filiais/guerengue"
+  facebook: "..."
+
+- est: "rj"
+  id: "gramacho"
+  nome: "Gramacho"
+  pastor:
+    nome: "Pr. Paulo César Amorim Lopes"
+    foto: ""
+  endereco: "Av. Presidente Kennedy, 2.118 - Gramacho – Duque de Caxias – Rio de Janeiro "
+  telefone: "(21) 2653-9276"
+  facebook: "..."
+
+- est: "rj"
+  id: "iguabagrande"
+  nome: "Iguaba Grande"
+  pastor:
+    nome: "Pr. Reynaldo Aécio Bonfim"
+    foto: ""
+  endereco: "Rodovia Amaral Peixoto - nº 1.121 - Bairro Canellas City - Iguaba Grande – Rio de Janeiro"
+  telefone: ""
   facebook: "..."
 
 - est: "rj"
@@ -186,6 +287,26 @@
   facebook: "..."
 
 - est: "rj"
+  id: "macae"
+  nome: "Macaé"
+  pastor:
+    nome: "Pr. Jarmuth Jordão Oliveira da Costa"
+    foto: ""
+  endereco: "Rua Guadalajara 1612 - Praia Campista - Macaé – Rio de Janeiro"
+  telefone: ""
+  facebook: "..."
+
+- est: "rj"
+  id: "macuco"
+  nome: "Macuco"
+  pastor:
+    nome: "Pr. Ezequiel Ercílio da Silva"
+    foto: ""
+  endereco: "Rua Henrique Frederico Ribeiro, 59 - Paraíso – Macuco – Rio de Janeiro"
+  telefone: "(22) 2554-1191"
+  facebook: "..."
+
+- est: "rj"
   id: "madureira"
   nome: "Madureira"
   pastor:
@@ -193,7 +314,6 @@
     foto: ""
   endereco: "Rua Carolina Machado, 792 - Madureira – Rio de Janeiro"
   telefone: "(21) 3013-7721"
-  link: "/filiais/largodobicao"
   facebook: "..."
 
 - est: "rj"
@@ -216,6 +336,16 @@
   endereco: "Rua Vidal Ramos, 419 - Marechal Hermes – Rio de Janeiro"
   telefone: "(21) 2451-7173"
   link: "/filiais/marechalhermes"
+  facebook: "..."
+
+- est: "rj"
+  id: "maua"
+  nome: "Mauá"
+  pastor:
+    nome: "Pr. Antônio Carlos Nogueira Maltoni Jr."
+    foto: ""
+  endereco: "Rua Veneza, 237 - Antiga Rua 10 - Centro - Praia de Mauá – Magé – Rio de Janeiro"
+  telefone: "(21) 2631-3079"
   facebook: "..."
 
 - est: "rj"
@@ -260,6 +390,26 @@
   endereco: "Rua Caroen, 380 - Penha Circular – Rio de Janeiro"
   telefone: ""
   link: "/filiais/morrodafe"
+  facebook: "..."
+
+- est: "rj"
+  id: "nilopolis"
+  nome: "Nilópolis"
+  pastor:
+    nome: "Pr André Luis de Loureiro"
+    foto: ""
+  endereco: "Rua Alberto Teixeira da Cunha, 1.351 - Centro – Nilópolis – Rio de Janeiro"
+  telefone: "(21) 3760-1357"
+  facebook: "..."
+
+- est: "rj"
+  id: "niteroi"
+  nome: "Niterói"
+  pastor:
+    nome: "Pr. Klayton Jefferson Pacheco Guimarães"
+    foto: ""
+  endereco: "Rua União, 33 – Maria Paula - Niterói  – Rio de Janeiro"
+  telefone: "(21) 2617-6422 - (21) 9912-0677"
   facebook: "..."
 
 - est: "rj"
@@ -318,6 +468,26 @@
   facebook: "..."
 
 - est: "rj"
+  id: "piabeta1"
+  nome: "Piabetá 1"
+  pastor:
+    nome: "Pr. Robson Alexandre de Souza Spada"
+    foto: ""
+  endereco: "Rua Guarani, 74 - Piabetá – Magé – Rio de Janeiro"
+  telefone: "(21) 2739-5091"
+  facebook: "..."
+
+- est: "rj"
+  id: "piabeta2"
+  nome: "Piabetá 2"
+  pastor:
+    nome: "Pr. Ronai de Almeida Lima Braga Junior"
+    foto: ""
+  endereco: "Lote 29 - Piabetá - Magé – Rio de Janeiro"
+  telefone: ""
+  facebook: "..."
+
+- est: "rj"
   id: "pracamarcoaurelio"
   nome: "Praça Marco Aurélio"
   pastor:
@@ -351,6 +521,16 @@
   facebook: "..."
 
 - est: "rj"
+  id: "posse"
+  nome: "Posse"
+  pastor:
+    nome: "Pr. Amarildo Nogueira"
+    foto: ""
+  endereco: "Rua Oliveira Rodrigues Alves, 461 - Posse – Nova Iguaçu – Rio de Janeiro"
+  telefone: "(21) 3851-0070"
+  facebook: "..."
+
+- est: "rj"
   id: "recreio"
   nome: "Recreio dos Bandeirantes"
   pastor:
@@ -370,6 +550,36 @@
   endereco: "Rua Gilka Machado - nº 132 - Recreio dos Bandeirantes – Rio de Janeiro"
   telefone: ""
   link: "/filiais/recreio2"
+  facebook: "..."
+
+- est: "rj"
+  id: "riodasostras1"
+  nome: "Rio das Ostras 1"
+  pastor:
+    nome: "Pr. Francisco Cavalcanti Neto"
+    foto: ""
+  endereco: "Rua Sete, 9 - Nova Cidade – Rio das Ostras – Rio de Janeiro"
+  telefone: "(22) 2760-5995"
+  facebook: "..."
+
+- est: "rj"
+  id: "riodasostras2"
+  nome: "Rio das Ostras 2"
+  pastor:
+    nome: "Pr. Almir Joaquim Arruda"
+    foto: ""
+  endereco: "Rodovia Amaral Peixoto, 4.184 - Centro - Rio das Ostras – Rio de Janeiro"
+  telefone: "(22) 2764-3142 - (22) 2764-3286"
+  facebook: "..."
+
+- est: "rj"
+  id: "riodasostras3"
+  nome: "Rio das Ostras 3"
+  pastor:
+    nome: "Pr. Custódio Silva"
+    foto: ""
+  endereco: "Rua Três Marias, 7 – Lojas 1/2 - Centro – Rio das Ostras – Rio de Janeiro"
+  telefone: ""
   facebook: "..."
 
 - est: "rj"
@@ -440,7 +650,7 @@
 
 - est: "rj"
   id: "jackmaritains"
-  nome: "Rua Jacuí"
+  nome: "Rua Jacks Maritains"
   pastor:
     nome: "Pr. Joelson Bezerra"
     foto: ""
@@ -516,12 +726,12 @@
   facebook: "..."
 
 - est: "rj"
-  id: "santaedwiges"
+  id: "santaedwirges"
   nome: "Rua Santa Edwirges"
   pastor:
     nome: "Pr. Alex da Silva Vieira"
     foto: ""
-  endereco: "Rua Soldado Paiva, 180 - Penha – Rio de Janeiro"
+  endereco: "Rua Santa Edwirges, 57 - Penha – Rio de Janeiro – Rio de Janeiro"
   telefone: ""
   link: "/filiais/santaedwiges"
   facebook: "..."
@@ -538,6 +748,36 @@
   facebook: "..."
 
 - est: "rj"
+  id: "saobento"
+  nome: "São Bento"
+  pastor:
+    nome: "Pb. Abner Cesar de Oliveira"
+    foto: ""
+  endereco: "Av. Governador Leonel de Moura Brizola - nº 7.780 - São Bento – Duque de Caxias – Rio de Janeiro"
+  telefone: "(21) 2561-6164"
+  facebook: "..."
+
+- est: "rj"
+  id: "saogoncalo"
+  nome: "São Gonçalo"
+  pastor:
+    nome: "Pr. Alex Sandro dos Santos Alves"
+    foto: ""
+  endereco: "Rua Coronel Rodrigues, 186 - Centro – São Gonçalo – Rio de Janeiro"
+  telefone: "(21) 2605-3268"
+  facebook: "..."
+
+- est: "rj"
+  id: "saojoao"
+  nome: "São João"
+  pastor:
+    nome: "Pr. Klingher Pereira de Souza"
+    foto: ""
+  endereco: "Estrada Arthur Antônio Sendas – 645 – Lote 20 – Galpão 2 - Parque Novo Rio – São João de Meriti – Rio de Janeiro"
+  telefone: "(21) 2772-9167"
+  facebook: "..."
+
+- est: "rj"
   id: "santacruz"
   nome: "Santa Cruz"
   pastor:
@@ -546,6 +786,16 @@
   endereco: "Rua João Macedo, lote 18, quadra B - Santa Cruz – Rio de Janeiro"
   telefone: ""
   link: "/filiais/santacruz"
+  facebook: "..."
+
+- est: "rj"
+  id: "saracuruna"
+  nome: "Saracuruna"
+  pastor:
+    nome: "Pr. Carlos Henrique Rodrigues Martiliano"
+    foto: ""
+  endereco: "Rua da Estação, nº14 - Centro - Saracuruna – Duque de Caxias – Rio de Janeiro"
+  telefone: ""
   facebook: "..."
 
 - est: "rj"
@@ -568,6 +818,16 @@
   endereco: "Rua Sebastião Bretã Farinelli, 286 – Sobral - Mallet – Rio de Janeiro"
   telefone: ""
   link: "/filiais/sobral"
+  facebook: "..."
+
+- est: "rj"
+  id: "taquara"
+  nome: "Taquara Caxias"
+  pastor:
+    nome: "Pr. Leandro Carlos Mateus Correia"
+    foto: ""
+  endereco: "Av. Cerro Cora, s/nº Lote 1 Quadra - 24 – Sobreloja - Taquara – Rio de Janeiro"
+  telefone: "(21) 3146-1571"
   facebook: "..."
 
 - est: "rj"
@@ -637,14 +897,34 @@
   facebook: "..."
 
 - est: "rj"
+  id: "vilasaoluiz"
+  nome: "Vila São Luiz"
+  pastor:
+    nome: "Pr. Alfredo Campos"
+    foto: ""
+  endereco: "Av. Brasil, 25 - Vila São Luiz – Duque de Caxias – Rio de Janeiro"
+  telefone: "(21) 2775-8530"
+  facebook: "..."
+
+- est: "rj"
   id: "vilavalqueire"
   nome: "Vila Valqueire"
   pastor:
     nome: "Pr. Reinaldo Alberto Ribeiro"
     foto: ""
   endereco: "Rua Urucuia - nº 764 - Chácara - Vila Valqueire – Rio de Janeiro"
-  telefone: ""
+  telefone: "(21) 2775-8530"
   link: "/filiais/vilavalqueire"
+  facebook: "..."
+
+- est: "rj"
+  id: "vilardosteles"
+  nome: "Vilar dos Teles"
+  pastor:
+    nome: "Pr. Alessandro de Moraes Santos"
+    foto: ""
+  endereco: "Av. Deputado José da Costa França, 95 - Vilar dos Teles – São João de Meriti – Rio de Janeiro"
+  telefone: "(21) 2651-1538"
   facebook: "..."
 
 - est: "rj"

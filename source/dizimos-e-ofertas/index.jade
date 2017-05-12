@@ -26,7 +26,11 @@ section.oferta-title
           p Quem faz a história da Igreja é o povo. As obras, as novas Igrejas e os trabalhos sociais são frutos da fidelidade e liberalidade da Igreja.
         
         .oferta-title__block__container__col__button
-          a(href="/fale-conosco/").btn.btn--blue-all Ofertar online
+          form(action="https://pagseguro.uol.com.br/checkout/v2/donation.html", method="post", id="pagseguro")
+              input(type="hidden", name="currency", value="BRL")
+              input(type="hidden", name="receiverEmail", value="tesouraria@advec.org")
+              input(type="hidden", name="iot", value="button")
+              a(onclick="document.getElementById('pagseguro').submit()", class="btn btn--blue-all") Ofertar Online
           a(href="#").btn.btn__popup--deposito Depósito Bancário
 
 section.oft-paragraph
