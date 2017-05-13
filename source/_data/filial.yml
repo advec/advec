@@ -15,7 +15,7 @@
   pastor:
     nome: "Pr. Luiz Cláudio de Souza"
     foto: ""
-  endereco: "Rodovia Amaral Peixoto, 89.743 - Centro – Araruama"
+  endereco: "Rodovia Amaral Peixoto, 89743 - Centro – Araruama"
   telefone: "(22) 2673-5499"
   facebook: "..."
 
@@ -25,7 +25,7 @@
   pastor:
     nome: "Pr. Jair Souza"
     foto: ""
-  endereco: "Av. Meriti, 3.633 - Cordovil - Rio de Janeiro"
+  endereco: "Av. Meriti, 3633 - Cordovil - Rio de Janeiro"
   telefone: "(21) 3301-7065"
   facebook: "..."
 
@@ -46,7 +46,7 @@
   pastor:
     nome: "Pr. Paulo José Rosa Vieira"
     foto: ""
-  endereco: "Av. Lúcio Costa, 3.800 - Barra da Tijuca – Rio de Janeiro"
+  endereco: "Av. Lúcio Costa, 3800 - Barra da Tijuca – Rio de Janeiro"
   telefone: "(21) 2439-8248"
   link: "/filiais/barradatijuca"
   facebook: "..."
@@ -89,7 +89,7 @@
   pastor:
     nome: "Pr. José Roberto Lopes de Oliveira"
     foto: ""
-  endereco: "R. do Cajá, 1.370 - Penha – Rio de Janeiro"
+  endereco: "R. do Cajá, 1370 - Penha – Rio de Janeiro"
   telefone: ""
   link: "/filiais/cajaii"
   facebook: "..."
@@ -121,7 +121,7 @@
   pastor:
     nome: "Pr. Incerlande Soares dos Santos"
     foto: ""
-  endereco: "Estrada do Mendanha, 5.024 Loja A - Campo Grande – Rio de Janeiro"
+  endereco: "Estrada do Mendanha, 5024 Loja A - Campo Grande – Rio de Janeiro"
   telefone: ""
   link: "/filiais/campogrande"
   facebook: "..."
@@ -164,7 +164,7 @@
   pastor:
     nome: "Pr. Leandro Meirelles"
     foto: ""
-  endereco: "R. Narcibe Simão, 1.584 - Retiro Poético – Cordeiro"
+  endereco: "R. Narcibe Simão, 1584 - Retiro Poético – Cordeiro"
   telefone: ""
   facebook: "..."
 
