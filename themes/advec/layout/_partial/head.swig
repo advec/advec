@@ -1,10 +1,9 @@
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>{{ config.title }}{% if page.title %} | {{ page.title }}{% else %} | Assembleia de Deus Vitória em Cristo{% endif %}</title>
+  <title>{{ config.title }}{% if page.name %} | {{ page.name }}{% else %} | Assembleia de Deus Vitória em Cristo{% endif %}</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <!-- Canonical links -->
-  <link rel="canonical" href="{{ url }}">
+  
   <!-- Icon -->
   <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('icon/apple-touch-icon-57x57.png') }}">
   <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('icon/apple-touch-icon-114x114.png') }}">
@@ -35,5 +34,4 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   {{ css('css/application') }}
   <!-- endbuild -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
 </head>
