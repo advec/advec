@@ -29,7 +29,7 @@
 </footer>
 
 <!-- Application.js -->
-{{ js('js/application') }}
+{{ js('assets/application') }}
 
 <!-- Google Analytics-->
 <script>

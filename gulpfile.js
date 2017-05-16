@@ -19,6 +19,11 @@ const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
 const cp = require('child_process');
 const clean = require('gulp-clean');
+const RevAll = require('gulp-rev-all');
+const awspublish = require('gulp-awspublish');
+const cloudfront = require("gulp-cloudfront");
+const rename = require('gulp-rename');
+const path = require('path');
 
 const srcPaths = {
   styl: 'themes/advec/_source/css/**/*.styl',
@@ -30,10 +35,11 @@ const srcPaths = {
 };
 
 const buildPaths = {
-  css: 'public/css/',
-  js: 'public/js/'
+  css: 'dest/assets/',
+  js: 'dest/assets/'
 };
 
+// CSS MIN
 gulp.task('css', () => {
   return gulp.src(srcPaths.styl)
     .pipe(plumber())
@@ -45,9 +51,9 @@ gulp.task('css', () => {
     .pipe(concat('application.css'))
     .pipe(cssnano({ mergeRules: false, zindex: false }))
     .pipe(gulp.dest(buildPaths.css))
-    .pipe(browserSync.reload({stream:true}))
 });
 
+// JS MIN
 gulp.task('js', () => {
   return gulp.src(srcPaths.js)
     .pipe(plumber())
@@ -56,20 +62,58 @@ gulp.task('js', () => {
     .pipe(gulp.dest(buildPaths.js))
 });
 
+// IMG MIN
 gulp.task('img', function () {
-    return gulp.src('imagem/*')
+    return gulp.src('img/**/*')
         .pipe(imagemin({
             progressive: true,
             use: [pngquant()]
         }))
-        .pipe(gulp.dest('imagemin-img'));
+        .pipe(gulp.dest('img/imagemin-img'));
 });
 
-gulp.task('clean', function() {
-  return gulp.src([buildPaths.css, buildPaths.js], {read: false})
-    .pipe(clean());
+// REV
+gulp.task('rev', function () {
+  return gulp.src(['dest/**']) 
+    .pipe(RevAll.revision({ 
+        dontRenameFile: ['.html', '.xml', '.txt'],
+        prefix: 'https://assets.adv.ec/'
+    }))
+    .pipe(gulp.dest('public/'))  
+    .pipe(RevAll.manifestFile())
+    .pipe(gulp.dest('public/')); 
 });
 
+// AWS PUBLISH
+var aws = {
+  "params": {
+  "Bucket": "assets.adv.ec"
+  },
+  "distributionId": "E1SYAKGEMSK3OD"
+};
+
+gulp.task('aws', function() {
+  var publisher = awspublish.create({
+    params: {
+      Bucket: 'assets.adv.ec'
+    }
+  });
+  var headers = {
+    'Cache-Control': 'max-age=315360000, no-transform, public'
+  };
+  return gulp.src('public/assets/**')
+    .pipe(rename(function(filePath) {
+        filePath.dirname = path.join('assets/', filePath.dirname);
+    }))
+    .pipe(awspublish.gzip())
+    .pipe(publisher.publish(headers))
+    .pipe(publisher.cache())
+    .pipe(publisher.sync())
+    .pipe(awspublish.reporter())
+    .pipe(cloudfront(aws));
+});
+
+// HEXO GENERATE
 gulp.task('hexo-generate', function (done) {
     browserSync.notify('Building Hexo');
     return cp.spawn('hexo', ['generate'], {stdio: 'inherit'})
@@ -83,6 +127,15 @@ gulp.task('hexo-regenerate', ['hexo-generate', 'js'], function () {
 gulp.task('browser-sync', ['hexo-generate'], function() {
     browserSync({
         server: {
+            baseDir: 'dest'
+        },
+        host: "localhost"
+    });
+});
+
+gulp.task('server', function() {
+    browserSync({
+        server: {
             baseDir: 'public'
         },
         host: "localhost"
@@ -94,6 +147,12 @@ gulp.task('watch', function() {
   gulp.watch(srcPaths.js, ['js']);
   gulp.watch([srcPaths.jade, srcPaths.pug, srcPaths.swig], ['hexo-regenerate']);
 });
+
+
+///////////////////
+///////////////////
+///////////////////
+///////////////////
 
 gulp.task('default', function() {
     gulp.start('css', 'js', 'browser-sync', 'watch');

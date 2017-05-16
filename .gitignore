@@ -6,3 +6,4 @@ _off/
 node_modules/
 .deploy_heroku
 public/
+dest/
