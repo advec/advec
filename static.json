@@ -3,16 +3,6 @@
   "clean_urls": true,
   "error_page": "/",
   "https_only": true,
-  "redirects": {
-    "/assets": {
-      "url": "/",
-      "status": 302
-    },
-    "/assets/**": {
-      "url": "/",
-      "status": 302
-    }
-  },
   "headers": {
     "/**": {
       "Access-Control-Allow-Origin": "*"
