@@ -536,20 +536,9 @@
   pastor:
     nome: "Pr. Cristian Sergio Guimarães de Oliveira"
     foto: ""
-  endereco: "Largo da Felicidade, 2 - Ramos – Rio de Janeiro"
-  telefone: "(21) 3518-9001 - (21) 3518-9002"
+  endereco: "Rua Genaro de Carvalho, 2.400 - Recreio dos Bandeirantes – Rio de Janeiro"
+  telefone: "(21) 3518-9003 - (21) 3518-9004"
   link: "/filiais/recreio"
-  facebook: "..."
-
-- est: "rj"
-  id: "recreio2"
-  nome: "Recreio dos Bandeirantes 2"
-  pastor:
-    nome: "Pr. Arno Butzke Filho"
-    foto: ""
-  endereco: "R. Gilka Machado, 132 - Recreio dos Bandeirantes – Rio de Janeiro"
-  telefone: ""
-  link: "/filiais/recreio2"
   facebook: "..."
 
 - est: "rj"
