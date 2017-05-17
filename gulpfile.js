@@ -64,19 +64,19 @@ gulp.task('js', () => {
 
 // IMG MIN
 gulp.task('img', function () {
-    return gulp.src('img/**/*')
+    return gulp.src('public/assets/images/**/*')
         .pipe(imagemin({
             progressive: true,
             use: [pngquant()]
         }))
-        .pipe(gulp.dest('img/imagemin-img'));
+        .pipe(gulp.dest('public/assets/images'));
 });
 
 // REV
 gulp.task('rev', function () {
   return gulp.src(['dest/**']) 
     .pipe(RevAll.revision({ 
-        dontRenameFile: ['.html', '.xml', '.txt'],
+        dontRenameFile: ['.html', '.xml', '.txt', '.eot', '.ttf', 'woff'],
         prefix: 'https://assets.adv.ec/'
     }))
     .pipe(gulp.dest('public/'))  
