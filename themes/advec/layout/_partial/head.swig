@@ -31,7 +31,7 @@
   <meta property="og:image" content="..." />
   <meta property="og:image:width" content="1280" />
   <!-- CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   {{ css('/assets/application') }}
+  
   <!-- endbuild -->
 </head>
