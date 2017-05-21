@@ -1,7 +1,7 @@
 layout: index
 ---
 
-.swiper      
+header.swiper      
   .swiper__container
     .swiper__container__block
       .swiper__container__block__title
@@ -26,51 +26,51 @@ section.bemvindo
       
       .bemvindo__container__block__button
         a(href="/filiais/").btn.btn--orange Nossas igrejas
-
-section.prsilas
-  .prsilas__block
-    .prsilas__block__container
-      .prsilas__block__container__col
-        .prsilas__block__container__col__title
+          
+section.full.prsilas
+  .full__block
+    .full__block__container
+      .full__block__container__col
+        .full__block__container__col__title
           h2 Pr. Silas Malafaia
-        .prsilas__block__container__col__text
+        .full__block__container__col__text
           p Pastor presidente da ADVEC, casado com a Pra. Elizete Malafaia e voz profética levantada por Deus para esta nação.
-        .prsilas__block__container__col__button
+        .full__block__container__col__button
           a(href="/pr-silas-malafaia/").btn.btn--white Conheça
           
-section.ebd
-  .ebd__background
-  .ebd__block
-    .ebd__block__container
-      .ebd__block__container__col
-        .ebd__block__container__col__title
+section.double.ebd
+  .double__background
+  .double__block
+    .double__block__container
+      .double__block__container__col
+        .double__block__container__col__title
           h2 Escola Bíblica Dominical.
-        .ebd__block__container__col__text
+        .double__block__container__col__text
           p Venha para a maior escola do mundo. Aprenda e proteja a sua família.
-        .ebd__block__container__col__button
+        .double__block__container__col__button
           a(href="/programacao/").btn.btn--red Nossa programação
 
-section.batismo
-  .batismo__block
-    .batismo__block__container
-      .batismo__block__container__col
-        .batismo__block__container__col__title
+section.full.batismo
+  .full__block
+    .full__block__container
+      .full__block__container__col
+        .full__block__container__col__title
           h2 Batismo: Um ato ordenado por Cristo. 
-        .batismo__block__container__col__text
+        .full__block__container__col__text
           p “Todo aquele que crê e for batizado, será salvo; mas quem não crer será condenado”. (Mc 16:16)” 
-        .batismo__block__container__col__button
+        .full__block__container__col__button
           a(href="/batismo/").btn.btn--white Seja um
 
-section.departamento
-  .departamento__background
-  .departamento__block
-    .departamento__block__container
-      .departamento__block__container__col
-        .departamento__block__container__col__title
+section.double.fazerparte
+  .double__background
+  .double__block
+    .double__block__container
+      .double__block__container__col
+        .double__block__container__col__title
           h2 Junte-se a Nós.
-        .departamento__block__container__col__text
-          p Faça parte do movimento para a Expansão do Reino de Deus. Temos departamentos para todas as idades e estamos prontos para receber você.
-        .departamento__block__container__col__button
+        .double__block__container__col__text
+          p Faça parte do movimento para a Expansão do Reino de Deus. Temos departamento para todas as idades e estamos prontos para receber você.
+        .double__block__container__col__button
           a(href="/fazer-parte/").btn.btn--black Fazer Parte
 
 .popup.popup__deposito
@@ -87,15 +87,15 @@ section.departamento
         p Agência: 0663-7
         p Conta: 14866-0
         
-section.doe
-  .doe__block
-    .doe__block__container
-      .doe__block__container__col
-        .doe__block__container__col__title
+section.full.oferta
+  .full__block
+    .full__block__container
+      .full__block__container__col
+        .full__block__container__col__title
           h2 Fé e liberalidade
-        .doe__block__container__col__text
+        .full__block__container__col__text
           p Quem faz a história da Igreja é o povo. As obras, as novas Igrejas e os trabalhos sociais são frutos da fidelidade e liberalidade da Igreja. 
-        .doe__block__container__col__button
+        .full__block__container__col__button
           form(action="https://pagseguro.uol.com.br/checkout/v2/donation.html", method="post", id="pagseguro")
               input(type="hidden", name="currency", value="BRL")
               input(type="hidden", name="receiverEmail", value="tesouraria@advec.org")
@@ -113,24 +113,3 @@ section.oracao
       .oracao__container__col__button
         a(href="/pedido-de-oracao/").btn.btn--black
           | Fazer pedido
-          
-section.useful
-  .useful__row
-    .useful__row__item
-      .useful__row__item__background
-        img(src="/assets/images/item/app.jpg")
-      .useful__row__item__button
-        a(href="/#/").btn.btn--white Baixe nosso app
-            
-    .useful__row__item
-      .useful__row__item__background
-        img(src="/assets/images/item/atendimento.jpg")
-      .useful__row__item__button
-        a(href="/fale-conosco/").btn.btn--white Fale conosco
-        
-    .useful__row__item
-      .useful__row__item__background
-        img(src="/assets/images/item/recadastramento.jpg")
-      .useful__row__item__button
-        a(href="/#/").btn.btn--white Recadastramento
-      

@@ -2,8 +2,6 @@
 // Section
 //
 // 1. Section
-// 2. Header
-// 3. Bars
 //
 // ==================================================
 
@@ -11,98 +9,117 @@
 // 1. Section
 // --------------------------------------------------
 
-.section
-  display flex
+.full
   align-items center
-  justify-content center
-  color $white
-  height 70vh
-  background-attachment fixed
-  background-size cover
-  background-position center center
-  +below('xs')
-    height 100vh
-
-  &__container
-    container()
-    display flex
-    justify-content center
-
-    &__col
-      max-width 50%
-
-      &__title
-        font-size: responsive
-
-      &__text
-        p
-          font-size: responsive 19px 21px
-
-      &__button
-        a:first-child
-          margin-right 10px
-
-      &__title,
-      &__button
-        padding-top 1.5em
-        padding-bottom 1.5em
-
-      &__title,
-      &__text,
-      &__button
-        text-align center
-
-//
-// 2. Header
-// --------------------------------------------------
-
-.section__header
-  height 55vh
-  color $white
-  text-align center
+  box-sizing border-box
   display flex
+  flex-direction column
+  height 100vh
   justify-content center
-  align-items center
-  overflow hidden
-  +below('xs')
-    height 100vh
-
-  &--header__filial
-    background-image url('/assets/images/back/section_filiais.png')
-    background-size cover
-    background-position center center
-    background-repeat no-repeat
-
-  &--header__departamentos
-    background-image url('/assets/images/back/section_departamentos.png')
-    background-size cover
-    background-position center center
-    background-repeat no-repeat
-
-  &--header__dizimo
-    height 100vh
-    background-image url('/assets/images/back/section_oferta.png')
-    background-size cover
-    background-position center center
-    background-repeat no-repeat
-
-  .header__inner-wrap
-    display flex
+  position relative
+  overflow visible
+  +above('sm')
     align-items center
+    background-position center center
+    display flex
+    flex-direction row
+    height 65vh
     justify-content center
+
+  &__block
+    background linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%)
+    display flex
+    justify-content center
+    align-items flex-end
+    height 100%
     width 100%
-    flex-flow column
+    +above('sm')
+      height 100%
+      order 1
 
-    .inner-wrap__block
-      max-width 50%
+    &__container
       display flex
-      justify-content center
-      align-items center
-      flex-flow column
+      align-items flex-end
+      justify-content flex-start
+      width 75%
+      height 100%
+      position relative
+      margin-bottom 4em
+      z-index 0
+      +above('sm')
+        align-items center
+        width 80%
+        margin-bottom 0
 
-      .block__text
-        margin-top 10px
+      &__col
+        width 100%
+        +above('sm')
+          width 40%
 
-      .block__button
-        padding-top 1.5em
-        padding-bottom 1.5em
+        &__title
+          color $white
+          margin-bottom 2em
+          text-align left
+
+          h2
+            font-weight 500
+
+        &__text
+          color $white
+          margin-bottom 1em
+          text-align left
+
+        &__button
+          text-align left
+          +above('sm')
+            text-align left
+
+.double
+  height 100vh
+  box-sizing border-box
+  flex(center, center, col)
+  position relative
+  overflow visible
+  +above('sm')
+    height 65vh
+    flex(center, center, row)
+
+  &__background
+    height 35%
+    width 100%
+    +above('sm')
+      height 100%
+      order 1
+
+  &__block
+    background white
+    flex(center, center, row)
+    height 65%
+    width 100%
+    +above('sm')
+      height 100%
+      order 1
+
+    &__container
+      width 75%
+      height auto
+      position relative
+      z-index 0
+      +above('sm')
+        width 60%
+
+      &__col
+        &__title
+          color $gray-dark
+          margin-bottom 2em
+
+          h2
+            font-weight 500
+
+        &__text
+          margin-bottom 1em
+
+        &__button
+          text-align left
+          +above('sm')
+            text-align left

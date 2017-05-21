@@ -128,300 +128,34 @@
             +above('lg')
               margin-right 1em
 
-.ebd
-  height 100vh
-  box-sizing border-box
-  flex(center, center, col)
-  position relative
-  overflow visible
-  +above('sm')
-    height 65vh
-    flex(center, center, row)
-
-  &__background
-    height 35%
-    width 100%
-    background url("/assets/images/back/section/ebd.png")
-    background-size cover
-    background-position center center
-    +above('sm')
-      height 100%
-      order 2
-
-  &__block
-    background white
-    flex(center, center, row)
-    height 65%
-    width 100%
-    +above('sm')
-      height 100%
-      order 1
-
-    &__container
-      width 75%
-      height auto
-      position relative
-      z-index 0
-      +above('sm')
-        width 60%
-
-      &__col
-        &__title
-          color $gray-dark
-          margin-bottom 2em
-
-          h2
-            font-weight 500
-
-        &__text
-          margin-bottom 1em
-
-        &__button
-          text-align left
-          +above('sm')
-            text-align left
-
 .prsilas
-  height 100vh
   background url("/assets/images/back/section/prsilasmalafaia.jpg")
   background-size cover
   background-position 73% 10%
-  box-sizing border-box
-  flex(center, center, col)
-  position relative
-  overflow visible
-  +above('sm')
-    background-position center center
-    height 65vh
-    flex(center, center, row)
 
-  &__block
-    background linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%)
-    display flex
-    justify-content center
-    align-items flex-end
-    height 100%
-    width 100%
-    +above('sm')
-      height 100%
-      order 1
-
-    &__container
-      display flex
-      align-items flex-end
-      justify-content flex-start
-      width 75%
-      height 100%
-      position relative
-      margin-bottom 4em
-      z-index 0
-      +above('sm')
-        align-items center
-        width 80%
-        margin-bottom 0
-
-      &__col
-        width 100%
-        +above('sm')
-          width 40%
-
-        &__title
-          color $white
-          margin-bottom 2em
-          text-align left
-
-          h2
-            font-weight 500
-
-        &__text
-          color $white
-          margin-bottom 1em
-          text-align left
-
-        &__button
-          text-align left
-          +above('sm')
-            text-align left
+.ebd
+  .double
+    &__background
+      background url("/assets/images/back/section/ebd.png")
+      background-size cover
+      background-position center center
 
 .batismo
-  height 100vh
   background url("/assets/images/back/section/batismo__a.png")
   background-size cover
   background-position center center
-  box-sizing border-box
-  flex(center, center, col)
-  position relative
-  overflow visible
-  +above('sm')
-    background-position center center
-    height 65vh
-    flex(center, center, row)
 
-  &__block
-    background linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%)
-    display flex
-    justify-content center
-    align-items flex-end
-    height 100%
-    width 100%
-    +above('sm')
-      height 100%
-      order 1
+.fazerparte
+  .double
+    &__background
+      background url("/assets/images/back/section/amareservir.png")
+      background-size cover
+      background-position center center
 
-    &__container
-      display flex
-      align-items flex-end
-      justify-content flex-start
-      width 75%
-      height 100%
-      position relative
-      margin-bottom 4em
-      z-index 0
-      +above('sm')
-        align-items center
-        width 80%
-        margin-bottom 0
-
-      &__col
-        width 100%
-        +above('sm')
-          width 40%
-
-        &__title
-          color $white
-          margin-bottom 2em
-          text-align left
-
-          h2
-            font-weight 500
-
-        &__text
-          color $white
-          margin-bottom 1em
-          text-align left
-
-        &__button
-          text-align left
-          +above('sm')
-            text-align left
-
-.departamento
-  height 100vh
-  box-sizing border-box
-  flex(center, center, col)
-  position relative
-  +above('sm')
-    height 70vh
-    flex(center, center, row)
-
-  &__background
-    height 35%
-    width 100%
-    background url("/assets/images/back/section/amareservir.png")
-    background-size cover
-    background-position center center
-    +above('sm')
-      height 100%
-
-  &__block
-    background white
-    flex(center, center, row)
-    height 65%
-    width 100%
-    +above('sm')
-      height 100%
-
-    &__container
-      width 75%
-      height auto
-      position relative
-      z-index 0
-      +above('sm')
-        width 60%
-
-      &__col
-        &__title
-          color $gray-dark
-          margin-bottom 2em
-
-          h2
-            font-weight 500
-
-        &__text
-          margin-bottom 1em
-
-        &__button
-          text-align left
-          +above('sm')
-            text-align left
-
-.doe
-  height 100vh
+.oferta
   background url("/assets/images/back/section/oferta__home.jpg")
   background-size cover
   background-position 30% center
-  box-sizing border-box
-  flex(center, center, col)
-  position relative
-  overflow visible
-  +above('sm')
-    background-position center center
-    height 65vh
-    flex(center, center, row)
-
-  &__block
-    background linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%)
-    display flex
-    justify-content center
-    align-items flex-end
-    height 100%
-    width 100%
-    +above('sm')
-      height 100%
-      order 1
-
-    &__container
-      display flex
-      align-items flex-end
-      justify-content flex-start
-      width 75%
-      height 100%
-      position relative
-      margin-bottom 4em
-      z-index 0
-      +above('sm')
-        align-items center
-        width 80%
-        margin-bottom 0
-
-      &__col
-        width 100%
-        +above('sm')
-          width 40%
-
-        &__title
-          color $white
-          margin-bottom 2em
-          text-align left
-
-          h2
-            font-weight 500
-
-        &__text
-          color $white
-          margin-bottom 1em
-          text-align left
-
-        &__button
-          text-align left
-
-          +above('sm')
-            text-align left
-
-          a
-            margin-bottom 10px
-            +above('sm')
-              margin-right 10px
 
 .oracao
   background white
@@ -459,73 +193,3 @@
 
       &__button
         padding-top 1em
-
-.useful
-  background $blue
-  display none
-  justify-content center
-  align-items center
-  width 100%
-  min-height 20vh
-  padding-top 2em
-  padding-bottom 2em
-  +above('sm')
-    background $gray-darker
-    height 19vh
-    padding 0
-
-
-  &__row
-    display flex
-    justify-content center
-    flex-direction column
-    width 100%
-    height 100%
-    +above('sm')
-      flex-direction row
-
-    &__item
-      box-sizing border-box
-      display flex
-      justify-content center
-      align-items center
-      text-align center
-      margin-bottom 1em
-      width 100%
-      height 100%
-      position relative
-      overflow hidden
-      +above('sm')
-        margin-bottom 0
-
-      &:last-child
-        margin-bottom 0
-
-      &:hover
-        .useful__row__item__background
-          opacity 1
-
-      &__background
-        position absolute
-        left 0
-        z-index 1
-        opacity .8
-        width 100%
-        transition opacity .5s
-        display none
-        img
-          width 100%
-
-        +above('sm')
-          display block
-
-      &__button
-        position relative
-        z-index 2
-        width 100%
-        max-width 300px
-
-        a
-          display block
-          +above('sm')
-            display inline-block
