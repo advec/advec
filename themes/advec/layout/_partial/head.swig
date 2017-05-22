@@ -25,5 +25,6 @@
   <link rel="icon" type="image/png" href="{{ url_for('/assets/images/icon/favicon-16x16.png') }}" sizes="16x16">
   <link rel="icon" type="image/png" href="{{ url_for('/assets/images/icon/favicon-32x32.png') }}" sizes="32x32">
   <link rel="icon" type="image/png" href="{{ url_for('/assets/images/icon/favicon-96x96.png') }}" sizes="96x96">
+  {{ css('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css') }}
   {{ css('/assets/application') }}
 </head>
