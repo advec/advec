@@ -24,6 +24,7 @@ const awspublish = require('gulp-awspublish');
 const cloudfront = require("gulp-cloudfront");
 const rename = require('gulp-rename');
 const path = require('path');
+const runSequence = require('run-sequence');
 
 const srcPaths = {
   styl: 'themes/advec/_source/css/**/*.styl',
@@ -154,6 +155,10 @@ gulp.task('watch', function() {
 ///////////////////
 ///////////////////
 
-gulp.task('default', function() {
-    gulp.start('css', 'js', 'browser-sync', 'watch');
+
+gulp.task('b', function(done) {
+    runSequence('css', 'js', 'rev', 'aws', function() {
+        console.log('Funcionando corretamente.');
+        done();
+    });
 });

@@ -15,7 +15,8 @@
     "hexo-deployer-heroku": "^0.1.1",
     "hexo-render-pug": "^1.2.0",
     "hexo-renderer-jade": "^0.3.0",
-    "hexo-server": "^0.2.0"
+    "hexo-server": "^0.2.0",
+    "owl.carousel": "^2.2.0"
   },
   "devDependencies": {
     "browser-sync": "^2.18.7",
@@ -42,6 +43,7 @@
     "postcss-pxtorem": "^4.0.0",
     "poststylus": "^0.2.3",
     "rucksack-css": "^0.9.1",
+    "run-sequence": "^1.2.2",
     "rupture": "^0.6.2"
   }
 }

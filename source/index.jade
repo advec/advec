@@ -26,25 +26,30 @@ section.bemvindo
       
       .bemvindo__container__block__button
         a(href="/filiais/").btn.btn--orange Nossas igrejas
-        
-section.evento
-  .evento__block(style="background-image: url('/assets/images/item/fogo.jpg')")
-    .evento__block__overlay
-    .evento__block__container
-      .evento__block__container__col
-        .evento__block__container__col__button
-          a(href="http://eventos.vitoriaemcristo.org/_gutenweb/_site/eventos/fogo2017/index.cfm").btn.btn--white Saiba mais
-  .evento__block(style="background-image: url('/assets/images/item/caravana.jpg')")
-    .evento__block__overlay
-    .evento__block__container
-      .evento__block__container__col
-        .evento__block__container__col__title
-          h2 Caravana
-        .evento__block__container__col__text
-          h4 Abril de 2018
-          h4 Dubai - Jordânia - Israel
-        .evento__block__container__col__text
-          a(href="http://ustravel.com").btn.btn--white Saiba mais
+
+section.teste
+  .owl-carousel.owl-theme
+    a(href="http://www.editoracentralgospel.com/_gutenweb/_loja/pg_deptos_produtos.cfm?depto=6")
+      .item(style="background: linear-gradient(to right, #ff5f6d, #ffc371);")
+        .cont
+          img(src="/assets/images/back/section/avec.png")
+
+    a(href="http://eventos.vitoriaemcristo.org/_gutenweb/_site/eventos/fogo2017/index.cfm")
+      .item(style="background-image: url('/assets/images/item/fogo.jpg')")
+        .cont
+    
+    a(href="http://ustravel.com.br")
+      .item(style="background-image: url('/assets/images/item/caravana.jpg')")
+        .cont
+          .title
+            h2 Caravana
+
+          .text
+            p EM ABRIL DE 2018
+            p Dubai - Jordânia - Israel
+
+          .text-support
+            p ustravel.com.br
           
 section.full.prsilas
   .full__block
@@ -115,7 +120,7 @@ section.full.oferta
         .full__block__container__col__text
           p Quem faz a história da Igreja é o povo. As obras, as novas Igrejas e os trabalhos sociais são frutos da fidelidade e liberalidade da Igreja. 
         .full__block__container__col__button
-          form(action="https://pagseguro.uol.com.br/checkout/v2/donation.html", method="post", id="pagseguro")
+          form(action="https://pagseguro.uol.com.br/checkout/v2/donation.html", method="post", target="_blank", id="pagseguro")
               input(type="hidden", name="currency", value="BRL")
               input(type="hidden", name="receiverEmail", value="tesouraria@advec.org")
               input(type="hidden", name="iot", value="button")

@@ -133,6 +133,28 @@
   background-size cover
   background-position 73% 10%
 
+.avec
+  background linear-gradient(to right, #ff5f6d, #ffc371)
+  background-size cover
+  background-position center center
+  display flex
+  align-items center
+  justify-content center
+  height 100%
+  width 100%
+
+  &__slide
+    display flex
+    align-items center
+    justify-content center
+    height 50%
+    max-width 650px
+    padding-top 4vh
+    padding-bottom 4vh
+    width 90%
+    img
+      width 100%
+
 .ebd
   .double
     &__background
@@ -158,64 +180,37 @@
   background-position 30% center
 
 .evento
-  height 100vh
-  box-sizing border-box
-  flex(center, center, col)
-  position relative
-  overflow visible
-  +above('sm')
-    height 38vh
-    flex(center, center, row)
+  lost-center 100%
+  width 100%
 
   &__block
     background-size cover
     background-position center center
-    display flex
-    justify-content center
-    align-items flex-end
-    height 65%
+    padding-bottom .8rem
+    padding-top .8rem
+    lost-align center
     width 100%
-    position relative
-    overflow hidden
     +above('sm')
-      height 100%
-      order 1
+      padding-bottom 2.3rem
+      padding-top 2.3rem
+      width calc(100% / 2)
 
     &__overlay
-      background linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.45) 100%)
-      width 100%
+      display absolute
       height 100%
-      position absolute
-      top 0
-      left 0
+      width 100%
       z-index 1
 
     &__container
+      display flex
+      align-items center
+      height 14rem
+      max-width 500px
       width 75%
-      height auto
-      position relative
-      z-index 2
-      margin-bottom 2em
-      +above('sm')
-        margin-bottom 4%
-        width 60%
 
       &__col
-        &__title
-          color white
-          margin-bottom 1em
-
-          h2
-            font-weight 500
-
-        &__text
-          color white
-          margin-bottom 1em
-
-        &__button
-          text-align center
-          +above('sm')
-            text-align center
+        img
+          width 100%
 
 .oracao
   background white
@@ -253,3 +248,53 @@
 
       &__button
         padding-top 1em
+
+.teste
+  color white
+  background white
+  padding-bottom 1rem
+  width 100%
+
+  .item
+    background-size cover
+    background-position center center
+    lost-align center
+    padding 1.5rem
+    box-shadow 0 1px 1px 0 rgba(0,0,0,.2)
+    margin-bottom 1rem
+    width 200px
+    border-radius 4px
+    position relative
+    overflow hidden
+    transform translate(0, 0px);
+    transition all .4s
+    +above('xs')
+      width 450px
+
+    &:hover
+      box-shadow inset 0px 0px 0px 1px rgba(0, 0, 0, .25)
+      transform translate(0, 4px);
+
+    .cont
+      display flex
+      justify-content center
+      align-items center
+      flex-direction column
+      height 140px
+      +above('xs')
+        height 210px
+
+      .title
+        text-align center
+        h2
+          font-weight 500
+
+      .text-support
+        margin-top .5rem
+
+        p
+          font-weight 500
+          font-size responsive
+
+      img
+        width 100%
