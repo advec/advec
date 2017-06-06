@@ -158,7 +158,7 @@ gulp.task('watch', function() {
 
 gulp.task('b', function(done) {
     runSequence('css', 'js', 'rev', 'aws', function() {
-        console.log('Funcionando corretamente.');
+        console.log('Funciaonando corretamente.');
         done();
     });
 });
