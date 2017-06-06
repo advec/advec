@@ -1,9 +1,8 @@
-.git
 .DS_Store
 .gitignore
-
+db.json
+.awspublish-assets.adv.ec
 _off/
 node_modules/
-.deploy_heroku
 public/
 dest/
