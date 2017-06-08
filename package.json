@@ -7,7 +7,7 @@
   },
   "scripts": {
     "build": "hexo generate && gulp",
-    "assets": "gulp assets"
+    "deploy": "netlify deploy"
   },
   "dependencies": {
     "hexo": "^3.2.2",
@@ -21,6 +21,7 @@
   "devDependencies": {
     "browser-sync": "^2.18.7",
     "cssnano": "^3.10.0",
+    "del": "^2.2.2",
     "font-awesome-stylus": "^4.7.0",
     "gulp": "^3.9.1",
     "gulp-awspublish": "^3.3.0",

@@ -24,6 +24,7 @@ const awspublish = require('gulp-awspublish');
 const cloudfront = require("gulp-cloudfront");
 const rename = require('gulp-rename');
 const path = require('path');
+const del = require('del');
 const runSequence = require('run-sequence');
 
 const srcPaths = {
@@ -36,8 +37,8 @@ const srcPaths = {
 };
 
 const buildPaths = {
-  css: 'dest/assets/',
-  js: 'dest/assets/'
+  css: 'devl/assets/',
+  js: 'devl/assets/'
 };
 
 // CSS MIN
@@ -75,7 +76,7 @@ gulp.task('img', function () {
 
 // REV
 gulp.task('rev', function () {
-  return gulp.src(['dest/**']) 
+  return gulp.src(['devl/**']) 
     .pipe(RevAll.revision({ 
         dontRenameFile: ['.html', '.xml', '.txt', '.eot', '.ttf', 'woff'],
         prefix: 'https://assets.adv.ec/'
@@ -83,6 +84,10 @@ gulp.task('rev', function () {
     .pipe(gulp.dest('public/'))  
     .pipe(RevAll.manifestFile())
     .pipe(gulp.dest('public/')); 
+});
+
+gulp.task('clean-assets', () => {
+    del(['public/assets/']);
 });
 
 // AWS PUBLISH
@@ -156,7 +161,7 @@ gulp.task('watch', function() {
 ///////////////////
 
 
-gulp.task('b', function(done) {
+gulp.task('default', function(done) {
     runSequence('css', 'js', 'rev', 'aws', function() {
         console.log('Funcionando corretamente.');
         done();
