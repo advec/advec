@@ -59,6 +59,12 @@ gulp.task('js', () => {
     .pipe(gulp.dest(buildPaths.js))
 });
 
+// ASSETS COPY
+gulp.task('assets', () => {
+    return gulp.src(__dirname + '/assets/**')
+        .pipe(gulp.dest(__dirname + '/public/assets/'));
+});
+
 // IMG MIN
 gulp.task('img', function () {
     return gulp.src('public/assets/images/**/*')
@@ -111,8 +117,8 @@ gulp.task('watch', function() {
 ///////////////////
 
 
-gulp.task('b', function(done) {
-    runSequence('css', 'js', 'rev', function() {
+gulp.task('default', function(done) {
+    runSequence('css', 'js', 'assets', function() {
         console.log('Funciaonando corretamente.');
         done();
     });
