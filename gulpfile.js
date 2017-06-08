@@ -157,7 +157,7 @@ gulp.task('watch', function() {
 
 
 gulp.task('b', function(done) {
-    runSequence('css', 'js', 'rev', 'aws', function() {
+    runSequence('css', 'js', 'rev', function() {
         console.log('Funciaonando corretamente.');
         done();
     });
