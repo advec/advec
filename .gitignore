@@ -2,6 +2,7 @@
 .gitignore
 db.json
 .awspublish-assets.adv.ec
+assets/
 _off/
 node_modules/
 public/
