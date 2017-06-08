@@ -113,6 +113,7 @@ gulp.task('aws', function() {
     }))
     .pipe(awspublish.gzip())
     .pipe(publisher.publish(headers))
+    .pipe(publisher.sync())
     .pipe(publisher.cache())
     .pipe(awspublish.reporter())
     .pipe(cloudfront(aws));
@@ -156,7 +157,8 @@ gulp.task('watch', function() {
 
 ///////////////////
 ///////////////////
-///////////////////\
+///////////////////
+///////////////////
 
 
 gulp.task('default', function(done) {
