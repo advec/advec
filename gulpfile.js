@@ -29,8 +29,8 @@ const runSequence = require('run-sequence');
 const srcPaths = {
   styl: 'themes/advec/_source/css/**/*.styl',
   js: 'themes/advec/_source/js/**/*.js',
-  jade: 'source/**/*.jade',
-  pug: 'source/**/*.pug',
+  jade: 'src/**/*.jade',
+  pug: 'src/**/*.pug',
   swig: 'themes/advec/layout/**/*.swig'
 
 };
