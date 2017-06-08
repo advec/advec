@@ -19,10 +19,6 @@ const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
 const cp = require('child_process');
 const clean = require('gulp-clean');
-const RevAll = require('gulp-rev-all');
-const awspublish = require('gulp-awspublish');
-const cloudfront = require("gulp-cloudfront");
-const rename = require('gulp-rename');
 const path = require('path');
 const runSequence = require('run-sequence');
 
@@ -36,8 +32,8 @@ const srcPaths = {
 };
 
 const buildPaths = {
-  css: 'dest/assets/',
-  js: 'dest/assets/'
+  css: 'public/assets/',
+  js: 'public/assets/'
 };
 
 // CSS MIN
@@ -71,47 +67,6 @@ gulp.task('img', function () {
             use: [pngquant()]
         }))
         .pipe(gulp.dest('public/assets/images'));
-});
-
-// REV
-gulp.task('rev', function () {
-  return gulp.src(['dest/**']) 
-    .pipe(RevAll.revision({ 
-        dontRenameFile: ['.html', '.xml', '.txt', '.eot', '.ttf', 'woff'],
-        prefix: 'https://assets.adv.ec/'
-    }))
-    .pipe(gulp.dest('public/'))  
-    .pipe(RevAll.manifestFile())
-    .pipe(gulp.dest('public/')); 
-});
-
-// AWS PUBLISH
-var aws = {
-  "params": {
-  "Bucket": "assets.adv.ec"
-  },
-  "distributionId": "E1SYAKGEMSK3OD"
-};
-
-gulp.task('aws', function() {
-  var publisher = awspublish.create({
-    params: {
-      Bucket: 'assets.adv.ec'
-    }
-  });
-  var headers = {
-    'Cache-Control': 'max-age=315360000, no-transform, public'
-  };
-  return gulp.src('public/assets/**')
-    .pipe(rename(function(filePath) {
-        filePath.dirname = path.join('assets/', filePath.dirname);
-    }))
-    .pipe(awspublish.gzip())
-    .pipe(publisher.publish(headers))
-    .pipe(publisher.cache())
-    .pipe(publisher.sync())
-    .pipe(awspublish.reporter())
-    .pipe(cloudfront(aws));
 });
 
 // HEXO GENERATE
