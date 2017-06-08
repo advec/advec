@@ -6,7 +6,8 @@
     "version": "3.2.2"
   },
   "scripts": {
-    "build": "hexo generate && gulp"
+    "build": "hexo generate && gulp",
+    "assets": "gulp assets"
   },
   "dependencies": {
     "hexo": "^3.2.2",
