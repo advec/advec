@@ -52,7 +52,7 @@
   	<div class="megamenu__container__block">
   		<ul class="megamenu__container__block__list">
   			<li class="megamenu__container__block__list__item">
-			  	<h4><a href="/quem-somos/">Quem Somosa</a></h4>
+			  	<h4><a href="/quem-somos/">Quem Somos</a></h4>
           <h4><a href="/filiais/">Onde Estamos</a></h4>
           <h4><a href="/dizimos-e-ofertas/">Dízimos e Ofertas</a></h4>
           <h4><a href="/fazer-parte/">Departamentos</a></h4>
