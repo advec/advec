@@ -115,7 +115,8 @@ gulp.task('aws', function() {
     .pipe(publisher.publish(headers))
     .pipe(publisher.cache())
     .pipe(publisher.sync())
-    .pipe(cloudfront(aws));
+    .pipe(cloudfront(aws))
+    .on('error', function(err) { console.error('failed to publish err code: ', err.statusCode); } )
 });
 
 // HEXO GENERATE
