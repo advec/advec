@@ -113,9 +113,8 @@ gulp.task('aws', function() {
     }))
     .pipe(awspublish.gzip())
     .pipe(publisher.publish(headers))
-    .pipe(publisher.sync())
     .pipe(publisher.cache())
-    .pipe(awspublish.reporter())
+    .pipe(publisher.sync())
     .pipe(cloudfront(aws));
 });
 
