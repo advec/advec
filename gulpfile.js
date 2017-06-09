@@ -111,12 +111,11 @@ gulp.task('aws', function() {
     .pipe(rename(function(filePath) {
         filePath.dirname = path.join('assets/', filePath.dirname);
     }))
-    .pipe(awspublish.gzip())
     .pipe(publisher.publish(headers))
-    .pipe(publisher.cache())
     .pipe(publisher.sync())
-    .pipe(cloudfront(aws))
-    .on('error', function(err) { console.error('failed to publish err code: ', err.statusCode); } )
+    .pipe(publisher.cache())
+    .pipe($.awspublish.reporter())
+    .pipe(cloudfront(aws));
 });
 
 // HEXO GENERATE
