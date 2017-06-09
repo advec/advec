@@ -112,9 +112,8 @@ gulp.task('aws', function() {
         filePath.dirname = path.join('assets/', filePath.dirname);
     }))
     .pipe(publisher.publish(headers))
-    .pipe(publisher.sync())
     .pipe(publisher.cache())
-    .pipe(cloudfront(aws))
+    .pipe(publisher.sync())
 });
 
 // HEXO GENERATE
