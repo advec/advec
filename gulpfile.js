@@ -114,8 +114,8 @@ gulp.task('aws', function() {
     .pipe(publisher.publish(headers))
     .pipe(publisher.sync())
     .pipe(publisher.cache())
-    .pipe($.awspublish.reporter())
-    .pipe(cloudfront(aws));
+    .pipe(cloudfront(aws))
+    .pipe(awspublish.reporter())
 });
 
 // HEXO GENERATE
