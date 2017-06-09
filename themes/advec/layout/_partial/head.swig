@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <title>{{ config.title }}{% if page.name %} | {{ page.name }}{% else %} | Assembleia de Deus Vitória em Cristo{% endif %}</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-  <meta name="title" content="ADVEC | Assembleia de Deus Vitória em Cristo" />
+  <meta name="title" content="ADVEC TEST | Assembleia de Deus Vitória em Cristo" />
 	<meta name="author" content="Pai, Filho e Espírito Santo!" />
 	<meta name="description" content="2017, ano de Fazer a Diferença. Somos Um." />
 	<meta name="keywords" content="igreja, evangelica, evangelico, pentecostal, jesus, palavra, unidade" />
