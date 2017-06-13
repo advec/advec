@@ -159,9 +159,15 @@ gulp.task('watch', function() {
 ///////////////////
 ///////////////////
 
+gulp.task('developer', function(done) {
+    runSequence('css', 'js', 'hexo-generate', function() {
+        console.log('Funcionando corretamente.');
+        done();
+    });
+});
 
 gulp.task('default', function(done) {
-    runSequence('css', 'js', 'hexo-generate', function() {
+    runSequence('css', 'js', 'rev', 'aws', function() {
         console.log('Funcionando corretamente.');
         done();
     });
