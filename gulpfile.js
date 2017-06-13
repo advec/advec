@@ -132,7 +132,7 @@ gulp.task('hexo-regenerate', ['hexo-generate', 'js'], function () {
 gulp.task('browser-sync', ['hexo-generate'], function() {
     browserSync({
         server: {
-            baseDir: 'dest'
+            baseDir: 'devl'
         },
         host: "localhost"
     });
@@ -141,7 +141,7 @@ gulp.task('browser-sync', ['hexo-generate'], function() {
 gulp.task('server', function() {
     browserSync({
         server: {
-            baseDir: 'public'
+            baseDir: 'devl'
         },
         host: "localhost"
     });
@@ -161,7 +161,7 @@ gulp.task('watch', function() {
 
 
 gulp.task('default', function(done) {
-    runSequence('css', 'js', 'rev', 'aws', function() {
+    runSequence('css', 'js', 'hexo-generate', function() {
         console.log('Funcionando corretamente.');
         done();
     });
