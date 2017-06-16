@@ -5,7 +5,7 @@
   pastor:
     nome: "Pr. Alan Menezes Mendes Rocha"
     foto: ""
-  endereco: "Av. Francisco Magalhães de Castro, 236 Lj - Parque Mambucada – Angra dos Reis"
+  endereco: "Av. Francisco Magalhães de Castro, 236 - Parque Mambucada – Angra dos Reis"
   telefone: "(24) 3362-6179"
   facebook: "..."
 
@@ -23,7 +23,7 @@
   id: "avmeriti"
   nome: "Av. Meriti"
   pastor:
-    nome: "Pr. Jair Souza"
+    nome: "Pr. Jair Silva"
     foto: ""
   endereco: "Av. Meriti, 3633 - Cordovil - Rio de Janeiro"
   telefone: "(21) 3301-7065"
@@ -57,7 +57,7 @@
   pastor:
     nome: "Dc. Anderson de Oliveira Mota"
     foto: ""
-  endereco: "R. Mojaca, 54 - Brás de Pina – Rio de Janeiro"
+  endereco: "R. Mojaca, 73 - Brás de Pina – Rio de Janeiro"
   telefone: "(21) 3455-5662"
   link: "/filiais/brasdepina"
   facebook: "..."
@@ -76,7 +76,7 @@
   id: "cajai"
   nome: "Cajá I"
   pastor:
-    nome: "Pr. Wallace Paiva"
+    nome: "Pr. Wallace Paiva Soares"
     foto: ""
   endereco: "R. do Cajá, 632 - Penha – Rio de Janeiro"
   telefone: ""
@@ -162,7 +162,7 @@
   id: "cordeiro"
   nome: "Cordeiro"
   pastor:
-    nome: "Pr. Leandro Meirelles"
+    nome: "Pr. Ezequiel Ercílio da Silva"
     foto: ""
   endereco: "R. Narcibe Simão, 1584 - Retiro Poético – Cordeiro"
   telefone: ""
@@ -183,7 +183,7 @@
   id: "engenheiropedreira"
   nome: "Engenheiro Pedreira"
   pastor:
-    nome: "Pr. Diego Félix da Cunha "
+    nome: "Pr. Diego Fonseca Félix da Cunha"
     foto: ""
   endereco: "R. São Tiago, S/N - Engenheiro Pedreira – Japeri"
   telefone: ""
@@ -248,7 +248,7 @@
   pastor:
     nome: "Dc. Diego da Silva Noberto dos Santos"
     foto: ""
-  endereco: "Praça Padre Portugal, 8 - Irajá – Rio de Janeiro"
+  endereco: "R. João Dalton, 08 - Irajá – Rio de Janeiro"
   telefone: "(21) 3376-7175"
   link: "/filiais/iraja"
   facebook: "..."
@@ -300,7 +300,7 @@
   id: "macuco"
   nome: "Macuco"
   pastor:
-    nome: "Pr. Ezequiel Ercílio da Silva"
+    nome: "Pr. Leandro Meirelles"
     foto: ""
   endereco: "R. Henrique Frederico Ribeiro, 59 - Paraíso – Macuco"
   telefone: "(22) 2554-1191"
@@ -320,7 +320,7 @@
   id: "marciliodias"
   nome: "Marcilio Dias"
   pastor:
-    nome: "Pr. José de Azevedo Silva"
+    nome: "Pr. Adelmo Conceição Costa"
     foto: ""
   endereco: "Travessa José Sarney, 21 – Marcílio Dias - Penha Circular"
   telefone: ""
@@ -427,7 +427,7 @@
   id: "parquerubensvaz"
   nome: "Parque Rubens Vaz"
   pastor:
-    nome: "Dc. Paulo César"
+    nome: "Dc. Paulo César Souza Dias"
     foto: ""
   endereco: "R. João Araújo, 199 - Bonsucesso – Rio de Janeiro"
   telefone: ""
@@ -473,7 +473,7 @@
   pastor:
     nome: "Pr. Robson Alexandre de Souza Spada"
     foto: ""
-  endereco: "R. Guarani, 74 - Piabetá – Magé"
+  endereco: "R. Guarani, 740 - Piabetá – Magé"
   telefone: "(21) 2739-5091"
   facebook: "..."
 
@@ -483,7 +483,7 @@
   pastor:
     nome: "Pr. Ronai de Almeida Lima Braga Junior"
     foto: ""
-  endereco: "Lote 29 - Piabetá - Magé"
+  endereco: "Rua Guarani, lote 29 - Piabetá - Magé"
   telefone: ""
   facebook: "..."
 
@@ -536,7 +536,7 @@
   pastor:
     nome: "Pr. Cristian Sergio Guimarães de Oliveira"
     foto: ""
-  endereco: "Rua Genaro de Carvalho, 2.400 - Recreio dos Bandeirantes – Rio de Janeiro"
+  endereco: "Av. das Américas, 12.161 - Recreio dos Bandeirantes – Rio de Janeiro"
   telefone: "(21) 3518-9003 - (21) 3518-9004"
   link: "/filiais/recreio"
   facebook: "..."
@@ -567,7 +567,7 @@
   pastor:
     nome: "Pr. Custódio Silva"
     foto: ""
-  endereco: "R. Três Marias, 7 – Lojas 1/2 - Centro – Rio das Ostras"
+  endereco: "R. Três Marias, 7 – Nova Cidade – Rio das Ostras"
   telefone: ""
   facebook: "..."
 
@@ -577,7 +577,7 @@
   pastor:
     nome: "Pr. Gustavo de Mattos Ribeiro"
     foto: ""
-  endereco: "R. Aguapé, 187 A - Parada de Lucas – Rio de Janeiro"
+  endereco: "R. Aguapé, 187 - Parada de Lucas – Rio de Janeiro"
   telefone: ""
   link: "/filiais/aguape"
   facebook: "..."
@@ -630,7 +630,7 @@
   id: "embuia"
   nome: "Rua Embuia"
   pastor:
-    nome: "Pr. Adelmo Conceição Costa"
+    nome: "Dc. Josiel Manoel Farias"
     foto: ""
   endereco: "R. Embuia, 2 Fundos - Penha Circular – Rio de Janeiro"
   telefone: ""
@@ -641,7 +641,7 @@
   id: "jackmaritains"
   nome: "Rua Jacks Maritains"
   pastor:
-    nome: "Pr. Joelson Bezerra"
+    nome: "Pr. Joelson Bezerra do Nascimento"
     foto: ""
   endereco: "R. Jacks Maritains, 78 - Brás de Pina – Rio de Janeiro"
   telefone: ""
@@ -663,7 +663,7 @@
   id: "jacupema"
   nome: "Rua Jacupema"
   pastor:
-    nome: "Dc. Felipe Mendes"
+    nome: "Dc. Felipe Mendes da Silva"
     foto: ""
   endereco: "R. Jacupema, 54 - Penha – Rio de Janeiro"
   telefone: ""
@@ -856,7 +856,7 @@
   id: "viladapenha"
   nome: "Vila da Penha"
   pastor:
-    nome: "Pr. Cristiano Carvalho"
+    nome: "Pr. Cristiano Carvalho Silva"
     foto: ""
   endereco: "R. General Silveira Sobrinho, 105 - Vila da Penha – Rio de Janeiro"
   telefone: "(21) 3351-5757"
@@ -878,7 +878,7 @@
   id: "vilakennedy"
   nome: "Vila Kennedy"
   pastor:
-    nome: "Dc. Rodrigo Simões"
+    nome: "Dc. Rodrigo Simões da Silva"
     foto: ""
   endereco: "Estrada Sargento Miguel Filho, 109 - Bangu – Rio de Janeiro"
   telefone: "(21) 3465-0869"
@@ -889,7 +889,7 @@
   id: "vilasaoluiz"
   nome: "Vila São Luiz"
   pastor:
-    nome: "Pr. Alfredo Campos"
+    nome: "Pr. Alfredo Campos Ribeiro"
     foto: ""
   endereco: "Av. Brasil, 25 - Vila São Luiz – Duque de Caxias – Rio de Janeiro"
   telefone: "(21) 2775-8530"
@@ -954,7 +954,7 @@
   id: "carangola"
   nome: "Carangola"
   pastor:
-    nome: "Pr. Sandro Aguiar"
+    nome: "Pr. Sandro Willians Ferreira de Aguiar"
     foto: ""
   endereco: "R. Santa Luzia, 450 - Centro - Carangola"
   telefone: ""
@@ -965,7 +965,7 @@
   id: "brasilia"
   nome: "Brasília"
   pastor:
-    nome: "Pr. José Rafael"
+    nome: "Pr. José Rafael Alves de Alencar"
     foto: ""
   endereco: "SGAN 912 - Conj. D Bloco B - Asa Norte Brasília"
   telefone: "(61) 3246-7273"
