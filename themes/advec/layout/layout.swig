@@ -5,7 +5,7 @@
 <body>
 {% endif %}
   {{ body }}
-  {% if page.footer == NULL || page.basic == NULL %}
+  {% if page.footer == NULL || page.basic == false %}
     {{ partial('_partial/footer') }}
   {% endif %}
 {% if page.footer == NULL %}
