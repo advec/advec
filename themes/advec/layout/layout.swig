@@ -5,8 +5,10 @@
 <body>
 {% endif %}
   {{ body }}
-  {% if page.footer == NULL || page.basic == false %}
-    {{ partial('_partial/footer') }}
+  {% if page.footer == NULL %}
+    {% if page.basic == NULL %}
+      {{ partial('_partial/footer') }}
+    {% endif %}
   {% endif %}
 {% if page.footer == NULL %}
 </body>
