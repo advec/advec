@@ -46,10 +46,9 @@ gulp.task('css', () => {
   return gulp.src(srcPaths.styl)
     .pipe(plumber())
     .pipe(stylus({
-      use: [rupture(), poststylus([lost(), rucksack(), autoprefixer({ browsers: ['> 1%', 'last 3 versions', 'Firefox >= 20', 'iOS >=7'] })])],
+      use: [rupture(), poststylus([lost(), rucksack(), autoprefixer()])],
       compress: false
     }))
-    .pipe(gcmq())
     .pipe(concat('application.css'))
     .pipe(cssnano({ mergeRules: false, zindex: false }))
     .pipe(gulp.dest(buildPaths.css))
