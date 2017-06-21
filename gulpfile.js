@@ -166,8 +166,8 @@ gulp.task('developer', function(done) {
     });
 });
 
-gulp.task('default', function(done) {
-    runSequence('css', 'js', 'rev', 'aws', function() {
+gulp.task('production', function(done) {
+    runSequence('css', 'js', 'hexo-generate', 'rev', 'aws', function() {
         console.log('Funcionando corretamente.');
         done();
     });
