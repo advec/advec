@@ -51,6 +51,7 @@ gulp.task('css', () => {
     }))
     .pipe(gcmq())
     .pipe(concat('application.css'))
+    .pipe(cssnano({ mergeRules: false, zindex: false }))
     .pipe(gulp.dest(buildPaths.css))
 });
 
@@ -151,7 +152,6 @@ gulp.task('watch', function() {
   gulp.watch(srcPaths.js, ['js']);
   gulp.watch([srcPaths.jade, srcPaths.pug, srcPaths.swig], ['hexo-regenerate']);
 });
-
 
 ///////////////////
 ///////////////////
