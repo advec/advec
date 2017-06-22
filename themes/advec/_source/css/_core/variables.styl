@@ -78,19 +78,8 @@ $p-size = 1.4rem
 $buttom-radius = 100px
 $widthContainer = 85%
 
-rupture = {
-  rasterise-media-queries: rasterise-media-queries
-  mobile-cutoff: 520px
-  tablet-cutoff: 760px
-  desktop-cutoff: 1200px
-  hd-cutoff: 1000px
-  enable-em-breakpoints: false
-  base-font-size: base-font-size
-  anti-overlap: false
-  density-queries: 'dppx' 'webkit' 'moz' 'dpi'
-  retina-density: 1.5
-  use-device-width: false
-}
+rupture.scale =        0        520px       760px      990px        1050px     1200px     
 
-rupture.scale = 0 (rupture.mobile-cutoff) (rupture.tablet-cutoff) 990px 1050px (rupture.desktop-cutoff) (rupture.hd-cutoff)
-rupture.scale-names = 0 'xs' 'sm' 'md' 'lg' 'xlg' 'hd'
+//                     └────┬────┘ └────┬────┘ └────┬────┘ └────┬────┘ └────┬────┘ └────┬────┘
+// Slice numbers:           1           2           3           4           5           6
+rupture.scale-names:   0        'xs'        'sm'         'md'         'lg'         'xlg'        'hd'
