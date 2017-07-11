@@ -13,7 +13,7 @@
   top 0
   position fixed
   z-index 5
-  +above('sm')
+  +above(760px)
     background none
 
   &__container
@@ -26,7 +26,7 @@
 
       &__logo
         width 170px
-        +below('xs')
+        +below(520px)
           width 9rem
 
         .st0
@@ -131,10 +131,10 @@
   transition all 1s cubic-bezier(0.7, -0.02, 0, 1)
   transform translateY(-40%)
   opacity 0
-  +above('lg')
+  +above(1050px)
     display none
 
-  +above('xlg')
+  +above(1200px)
     height 100%
     padding-bottom 5%
 
@@ -151,7 +151,7 @@
       overflow scroll
       width 85%
       height 73%
-      +above('xlg')
+      +above(1200px)
         overflow hidden
         position relative
         width 100%
@@ -165,11 +165,11 @@
         padding 0
         margin 0
         position absolute
-        +above('sm')
+        +above(760px)
           flex-direction row
           flex-wrap wrap
 
-        +above('xlg')
+        +above(1200px)
           height auto
           flex-direction row
           position relative
