@@ -37,14 +37,14 @@
       padding-left calc(15% / 2)
       padding-right calc(15% / 2)
       width 100%
-      +above('sm')
+      +above(760px)
         align-items center
         width 100%
 
       &__title
         height 155px
         text-align left
-        +above('lg')
+        +above(1050px)
           text-align center
           width 100%
 
@@ -66,7 +66,7 @@
         display flex
         flex-direction column
         align-items baseline
-        +above('sm')
+        +above(760px)
           flex-direction row
           .btn--white
             margin-right 1em
@@ -116,16 +116,16 @@
         flex-direction column
         justify-content center
         align-items center
-        +above('lg')
+        +above(1050px)
           flex-direction row
 
         .btn--black
           margin-bottom 1em
-          +above('lg')
+          +above(1050px)
             margin-bottom 0
 
           &:first-child
-            +above('lg')
+            +above(1050px)
               margin-right 1em
 
 .prsilas
@@ -190,7 +190,7 @@
     padding-top .8rem
     lost-align center
     width 100%
-    +above('sm')
+    +above(760px)
       padding-bottom 2.3rem
       padding-top 2.3rem
       width calc(100% / 2)
@@ -217,7 +217,7 @@
   box-sizing border-box
   flex(center, center, col)
   height 100vh
-  +above('sm')
+  +above(760px)
     flex(center, center, row)
     height 60vh
     padding-bottom 0
@@ -227,7 +227,7 @@
     height auto
     position relative
     z-index 0
-    +above('sm')
+    +above(760px)
       width 40%
 
     &__col
@@ -236,7 +236,7 @@
       &__text
       &__button
         text-align left
-        +above('sm')
+        +above(760px)
           text-align center
 
       &__title
@@ -268,7 +268,7 @@
     overflow hidden
     transform translate(0, 0px);
     transition all .4s
-    +above('xs')
+    +above(520px)
       width 450px
 
     &:hover
@@ -281,7 +281,7 @@
       align-items center
       flex-direction column
       height 140px
-      +above('xs')
+      +above(520px)
         height 210px
 
       .title
