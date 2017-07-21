@@ -10,6 +10,7 @@
   <meta name="theme-color" content="#cc0000">
   <meta name="msapplication-navbutton-color" content="#cc0000">
   <meta name="apple-mobile-web-app-status-bar-style" content="#cc0000">
+  <meta name="google-site-verification" content="dIMu-k2M4O00k1GWwgneydbW-vxM6usXuPLrIJGxLAU" />
   <meta property="og:title" content="ADVEC | Assembleia de Deus Vitória em Cristo" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://www.advec.org/" />
