@@ -201,6 +201,7 @@ $(document).ready(function () {
 						args: [
 							{
 								title: 'Depósito Bancário',
+								width: '43%',
 								content: '<div class="popup popup__deposito"><div class="popup__content"><div class="popup__content__list"><div class="popup__content__list__item"><h2>Itau</h2><p>Agência: 0410</p><p>Conta: 74861-0</p></div><div class="popup__content__list__item"><h2>Bradesco</h2><p>Agência: 0663-7</p><p>Conta: 14866-0</p></div></div></div></div>'
 							}
 						]
