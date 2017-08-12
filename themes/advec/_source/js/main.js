@@ -236,6 +236,7 @@ $(document).ready(function () {
 
 							variant.fn = variant.fn || $.sweetModal;
 							variant.fn.apply(this, variant.args);
+							console.log('Teste sweetmodal.');
 						});
 					}
 				}
