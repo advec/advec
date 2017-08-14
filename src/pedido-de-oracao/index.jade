@@ -9,7 +9,8 @@ section.pdo-form
       
     .pdo-form__container__form
       form(method="POST" action="https://formspree.io/guilherme.lessa@advec.org")
-        input(type="hidden" name="_next" value="//site.io/thanks.html")
-        input(type="text" name="Nome" placeholder="Seu nome")
-        textarea(name="message" placeholder="Seu pedido...")
+        input(type="hidden" name="_subject" value="Novo Pedido de Oração")
+        input(type="hidden" name="_next" value="//advec.org")
+        input(type="text" name="nome" placeholder="Seu nome")
+        textarea(name="pedidodeoracao" placeholder="Seu pedido...")
         button(type="submit") Enviar
