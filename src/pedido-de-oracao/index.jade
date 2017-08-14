@@ -8,6 +8,8 @@ section.pdo-form
       h1 Pedido de oração
       
     .pdo-form__container__form
-      script(type="text/javascript" src="https://advec.formstack.com/forms/js.php/fale_conosco")
-      noscript
-        a(href="https://advec.formstack.com/forms/fale_conosco" title="Online Form") Online Form - advec.org/pedido-de-oracao
+      form(method="POST" action="http://formspree.io/guilherme.lessa@advec.org")
+        input(type="hidden" name="_next" value="https://advec.org")
+        input(type="text" name="Nome" placeholder="Seu nome")
+        textarea(name="message" placeholder="Seu pedido...")
+        button(type="submit") Enviar
