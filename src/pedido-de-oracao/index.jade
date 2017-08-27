@@ -11,6 +11,6 @@ section.pdo-form
       form(method="POST" action="https://formspree.io/oracao@advec.org").form__oracao
         input(type="hidden" name="_subject" value="Novo Pedido de Oração")
         input(type="hidden" name="_next" value="//advec.org")
-        input(type="text" name="nome" placeholder="Seu nome")
-        textarea(name="pedidodeoracao" placeholder="Seu pedido...")
+        input(type="text" name="nome" placeholder="Seu nome" required)
+        textarea(name="pedidodeoracao" placeholder="Seu pedido" required)
         button(type="submit") Enviar
