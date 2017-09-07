@@ -197,7 +197,17 @@ $(document).ready(function () {
 						]
 					},
 
-					'html-content': {
+					'oferta__contas': {
+						args: [
+							{
+								title: 'Depósito Bancário',
+								width: 'auto',
+								content: '<div class="popup popup__deposito"><div class="popup__content"><div class="popup__content__list"><div class="popup__content__list__item"><h2>Itau</h2><p>Agência: 0410</p><p>Conta: 74861-0</p><p style="font-size: .8em;">CNPJ: 34.292.797/0001-60</p></div><div class="popup__content__list__item"><h2>Bradesco</h2><p>Agência: 0663-7</p><p>Conta: 14866-0</p><p style="font-size: .8em;">CNPJ: 34.292.797/0001-60</p></div></div></div></div>'
+							}
+						]
+					},
+
+					'oracao__form': {
 						args: [
 							{
 								title: 'Depósito Bancário',
