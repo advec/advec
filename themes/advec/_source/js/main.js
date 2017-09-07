@@ -212,7 +212,7 @@ $(document).ready(function () {
 							{
 								title: 'Depósito Bancário',
 								width: 'auto',
-								content: '<div class="popup popup__deposito"><div class="popup__content"><div class="popup__content__list"><div class="popup__content__list__item"><h2>Itau</h2><p>Agência: 0410</p><p>Conta: 74861-0</p><p style="font-size: .8em;">CNPJ: 34.292.797/0001-60</p></div><div class="popup__content__list__item"><h2>Bradesco</h2><p>Agência: 0663-7</p><p>Conta: 14866-0</p><p style="font-size: .8em;">CNPJ: 34.292.797/0001-60</p></div></div></div></div>'
+								content: '<form action="https://formspree.io/xwlekgqm" method="POST" class="form__oracao"><input type="hidden" name="_subject" value="Novo Pedido de Oração"><input type="hidden" name="_next" value="//advec.org"><input type="text" name="_gotcha" style="display: none"><input type="text" name="nome" placeholder="Seu nome" required="required"><textarea name="pedidodeoracao" placeholder="Seu pedido" required="required"></textarea><button type="submit">Enviar</button></form>'
 							}
 						]
 					},
