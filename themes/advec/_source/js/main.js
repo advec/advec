@@ -210,9 +210,9 @@ $(document).ready(function () {
 					'oracao__form': {
 						args: [
 							{
-								title: 'Depósito Bancário',
+								title: 'Pedido de Oração',
 								width: 'auto',
-								content: '<form action="https://formspree.io/xwlekgqm" method="POST" class="form__oracao"><input type="hidden" name="_subject" value="Novo Pedido de Oração"><input type="hidden" name="_next" value="www.advec.org"><input type="text" name="_gotcha" style="display: none"><input type="text" name="nome" placeholder="Seu nome" required="required"><textarea name="pedidodeoracao" placeholder="Seu pedido" required="required"></textarea><button type="submit">Enviar</button></form>'
+								content: '<form action="https://formspree.io/xwlekgqm" method="POST" class="form__oracao"><input type="hidden" name="_subject" value="Novo Pedido de Oração"><input type="hidden" name="_next" value="//www.advec.org"><input type="text" name="_gotcha" style="display: none"><input type="text" name="nome" placeholder="Seu nome" required="required"><textarea name="pedidodeoracao" placeholder="Seu pedido" required="required"></textarea><button type="submit">Enviar</button></form>'
 							}
 						]
 					},
