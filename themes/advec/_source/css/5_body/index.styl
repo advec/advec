@@ -24,60 +24,18 @@
     width 100%
     height 100vh
 
-    &__block
-      display flex
-      flex-direction column
-      align-items flex-start
-      height 100vh
-      justify-content center
-      box-sizing border-box
-      position absolute
-      top 0
-      z-index 3
-      padding-left calc(15% / 2)
-      padding-right calc(15% / 2)
-      width 100%
-      +above(760px)
-        align-items center
-        width 100%
-
-      &__title
-        height 155px
-        text-align left
-        +above(1050px)
-          text-align center
-          width 100%
-
-        h1
-          font-size responsive 4rem 9rem
-          font-weight bold
-
-        .type-title-span
-          border-right .05em solid
-          animation caret 1s steps(1) infinite
-
-        @keyframes caret {
-          50% {
-            border-color: transparent;
-          }
-        }
-
-      &__button
-        display flex
-        flex-direction column
-        align-items baseline
-        +above(760px)
-          flex-direction row
-          .btn--white
-            margin-right 1em
-
-        .btn--white
-          margin-bottom 1em
-
     .swiper-wrapper
       .swiper-slide
         background-size cover
         background-position center center
+        display flex
+        justify-content center
+        align-items center
+
+        &__infos
+          display flex
+          justify-content center
+          flex-direction column
 
 //
 // 2. Section

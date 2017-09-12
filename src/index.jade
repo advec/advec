@@ -3,20 +3,28 @@ layout: index
 
 header.swiper      
   .swiper__container
-    .swiper__container__block
-      .swiper__container__block__title
-        h1 Somos Um
-        
-      .swiper__container__block__button
-        a(href="/programacao/").btn.btn--white Novo por aqui?
-        a(href="https://adv.ec/advec").btn.btn--aovivo Assista ao vivo
-      
     .swiper-wrapper
       .swiper-slide(style="background-image: url('/assets/images/swipper/background__b.jpg')")
+        .swiper-slide__infos
+          .swiper-slide__infos__title
+            h1 Somos Um
 
-      .swiper-slide(style="background-image: url('/assets/images/swipper/background__a.jpg')")
+          .swiper-slide__infos__description
+            p Seja bem vindo ao nosso site.
 
-      .swiper-slide(style="background-image: url('/assets/images/swipper/background__c.jpg')")
+          .swiper-slide__infos__button
+            a(href="https://adv.ec/advec").btn.btn--aovivo Assista ao vivo
+
+      .swiper-slide(style="background-image: url('/assets/images/swipper/background__b.jpg')")
+        .swiper-slide__infos
+          .swiper-slide__infos__title
+            h1 Ações de Graças
+
+          .swiper-slide__infos__description
+            p Pela vida do nosso Pr. Silas Malafaia
+
+          .swiper-slide__infos__button
+            a(href="https://adv.ec/advec").btn.btn--aovivo Saiba Mais
 
 section.bemvindo
   .bemvindo__container
