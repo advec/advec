@@ -253,14 +253,16 @@ $(document).ready(function () {
 				}
 
    var swiper = new Swiper('.swiper__container', {
-        effect: 'fade',
+		effect: 'fade',
+		pagination: '.swiper-pagination',
+        paginationType: 'progress',
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
         slidesPerView: 1,
         centeredSlides: true,
         autoplayDisableOnInteraction: false,
         grabCursor: true,
-        autoplay: 2500,
+        autoplay: 3500,
         loop: true
     });
 
