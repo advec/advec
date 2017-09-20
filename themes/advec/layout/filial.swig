@@ -1,4 +1,4 @@
-{{ partial('_partial/navbar__color') }}
+{{ partial('_partial/navbar__white') }}
 {{ page.content }}
 
 <section class="filial-nav">
