@@ -6,11 +6,9 @@
 .qsm-header
     display flex
     align-items center
-    height 70vh
     flex-direction column
     background white
     box-sizing border-box
-    background url("/assets/images/back/section/quemsomos__a.jpg")
     background-size cover
     background-position center center
     position relative
@@ -19,17 +17,22 @@
         flex(center, center, col)
 
     &__container
-        width 85%
+        width 100%
+        background-size cover
+        background-position center center
+        position relative
+        height 580px
         +above('xs')
             display flex
             align-items center
             justify-content center
-
+        
         &__block
             display inline-block
             padding-top 6.5em
             padding-bottom 4em
             width 100%
+
 
             &__title
                 +above('xs')
@@ -49,14 +52,17 @@
 
     &__menu
       display flex
+      height 70hv
       justify-content center
       align-items center
-      position absolute
-      top 0
       width 100%
       padding-top 1.5em
       padding-bottom 1.5em
       background $blue
+      +above('xs')
+          display flex
+          align-items center
+          justify-content center
 
       &__container
         display flex
