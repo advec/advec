@@ -77,7 +77,7 @@ if(window.location.pathname == "/filiais/") {
     } else if (fragmentId == "#mg") {
       sname.textContent = "Minas Gerais";
     } else if (fragmentId == "#es") {
-      sname.textContent = "Espirito Santo";
+      sname.textContent = "Espírito Santo";
     } else if (fragmentId == "#df") {
       sname.textContent = "Distrito Federal";
     } else if (fragmentId == "#pe") {
