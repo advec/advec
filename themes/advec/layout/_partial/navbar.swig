@@ -7,7 +7,7 @@
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   	 viewBox="0 0 1496 383.4" style="enable-background:new 0 0 1496 383.4;" xml:space="preserve">
                   <g>
-                  	<g>
+                  	<g class="symbol">
                   		<g>
                   			<path class="st0" d="M164.9,70.9c6.1,6.5,23.4,40.9-21.7,61.5c-54.1,24.7-27.1,92.6-27.1,92.6s-2.1-17.5,0.6-28.5
                   				c12.3-41.8,44.9-39.7,70.8-67.6C212.6,102,171.5,73.4,164.9,70.9z"/>
@@ -24,7 +24,7 @@
                   			C22,375.5,43,369.8,50,367.3c7-2.5,47.7-17.2,72.3-17.2s40.7,9.5,47.7,18c7-8.5,23.1-18,47.7-18s65.3,14.6,72.3,17.2
                   			c7,2.5,28,8.3,43.7,10.8l1.1,2.3c0,0-53.9-7.8-69.1-11.2s-39.7-8.7-58.5-5.1C188.3,367.7,176.9,376.8,170.1,383.4z"/>
                   	</g>
-                  	<g>
+                  	<g class="text">
                   		<path class="st2" d="M412.5,132l-4.8,15.9h-10.6l18-56.1h13.1l18.2,56.1h-11l-5.1-15.9H412.5z M428.5,124.3l-4.4-13.8
                   			c-1.1-3.4-2-7.2-2.8-10.5h-0.2c-0.8,3.2-1.7,7.2-2.7,10.5l-4.3,13.8H428.5z"/>
                   		<path class="st2" d="M452.1,138.5c2.3,1.4,6.7,2.9,10.4,2.9c4.5,0,6.5-1.8,6.5-4.5c0-2.7-1.7-4.2-6.7-5.9
@@ -121,6 +121,7 @@
             <div class="navbar__container__row__navbar">
                 <div class="navbar__container__row__navbar__items">
                     <ul>
+						<li><a href="https://www.youtube.com/user/advitoriaemcristo/live">Assista Ao Vivo</a></li>
                         {% for link in site.data.menu %}
                         <li><a href={{ url_for(link) }}>{{ loop.key }}</a></li>
                         {% endfor %}
@@ -142,11 +143,12 @@
   	<div class="megamenu__container__block">
   		<ul class="megamenu__container__block__list">
   			<li class="megamenu__container__block__list__item">
+			  	<h4><a href="https://www.youtube.com/user/advitoriaemcristo/live">Assista Ao Vivo</a></h4>
 			  	<h4><a href="/quem-somos/">Quem Somos</a></h4>
-          <h4><a href="/filiais/">Onde Estamos</a></h4>
-          <h4><a href="/dizimos-e-ofertas/">Dízimos e Ofertas</a></h4>
-          <h4><a href="/fazer-parte/">Departamentos</a></h4>
-          <h4><a href="/programacao/">Programação</a></h4>
+				<h4><a href="/filiais/">Onde Estamos</a></h4>
+				<h4><a href="/dizimos-e-ofertas/">Dízimos e Ofertas</a></h4>
+				<h4><a href="/fazer-parte/">Departamentos</a></h4>
+				<h4><a href="/programacao/">Programação</a></h4>
   			</li>
   		</ul>
   	</div>

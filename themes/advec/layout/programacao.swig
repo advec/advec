@@ -1,4 +1,4 @@
-{{ partial('_partial/navbar__white') }}
+{{ partial('_partial/navbar') }}
 {{ page.content }}
 
 <section class="pgm-list">

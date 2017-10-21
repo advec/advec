@@ -10,13 +10,23 @@ body
   padding 0
   color $text-color
   font-family('gotham')
-  background #fcfcfc !important
+  background #efefef !important
+  overflow-x hidden
 
   &.overflow--hidden
     width 100%
     position fixed
     /* when primary navigation is visible, the content in the background won't scroll */
     overflow hidden !important
+
+/* body */
+
+.body
+  box-shadow 0 0 20px rgba(0, 0, 0, 0.1)
+  height 100%
+  margin auto
+  max-width 1440px
+  overflow-x hidden
 
 h1
 h2

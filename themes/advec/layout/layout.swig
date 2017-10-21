@@ -4,7 +4,9 @@
   {{ partial('_partial/head') }}
 <body>
 {% endif %}
-  {{ body }}
+  <div class="body">
+    {{ body }}
+  </div>
   {% if page.footer == NULL %}
     {% if page.basic == NULL %}
       {{ partial('_partial/footer') }}

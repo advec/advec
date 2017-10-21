@@ -1,2 +1,2 @@
-{{ partial('_partial/navbar__color') }}
+{{ partial('_partial/navbar') }}
 {{ page.content }}
