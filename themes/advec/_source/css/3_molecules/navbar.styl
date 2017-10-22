@@ -15,6 +15,7 @@
   padding 15px 40px
   background-color white !important
   box-shadow 0 0 20px rgba(0, 0, 0, 0.1)
+  
 
   &__container
     position relative
@@ -74,10 +75,10 @@
                 padding-bottom 20px
                 font-weight 500
 
-  &__white
-    g 
-      .text
-        opacity 0
+  g 
+    .text
+      +below(520px)
+        display none
 
 /* menu hamburguer nav */
 

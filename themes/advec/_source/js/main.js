@@ -1,3 +1,4 @@
+/** 
 $(window).scroll(function() {
 	var scrollBottom, scrollMid, scrollTop;
 	scrollTop = $(window).scrollTop();
@@ -9,6 +10,7 @@ $(window).scroll(function() {
 		$(".navbar").removeClass('navbar__white');
 	}
 });
+*/
 
 $(document).ready(function () {
   var variants = {
