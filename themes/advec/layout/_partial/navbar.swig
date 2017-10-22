@@ -126,6 +126,7 @@
                         <li><a href={{ url_for(link) }}>{{ loop.key }}</a></li>
                         {% endfor %}
                     </ul>
+					<a href="https://www.youtube.com/user/advitoriaemcristo/live" class="ao-vivo-btn">Assista Ao Vivo</a>
                     <div class="btn-nav">
                       <span></span>
                       <span></span>
@@ -143,7 +144,6 @@
   	<div class="megamenu__container__block">
   		<ul class="megamenu__container__block__list">
   			<li class="megamenu__container__block__list__item">
-			  	<h4><a href="https://www.youtube.com/user/advitoriaemcristo/live">Assista Ao Vivo</a></h4>
 			  	<h4><a href="/quem-somos/">Quem Somos</a></h4>
 				<h4><a href="/filiais/">Onde Estamos</a></h4>
 				<h4><a href="/dizimos-e-ofertas/">Dízimos e Ofertas</a></h4>

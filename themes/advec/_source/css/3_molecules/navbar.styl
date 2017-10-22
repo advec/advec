@@ -49,12 +49,11 @@
           align-items center
 
           ul
-            display flex
             justify-content flex-end
             padding 0
             margin 0
             display none
-            +above(1050px)
+            +above(1080px)
               display flex
 
             li
@@ -75,6 +74,12 @@
                 padding-bottom 20px
                 font-weight 500
 
+          .ao-vivo-btn
+            display none
+            font-size .8em
+            margin-right 15px
+            +above(1080px)
+              display flex
   g 
     .text
       +below(520px)
